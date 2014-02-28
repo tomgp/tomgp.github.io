@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style type="text/css">
-  body{
-    font-family: sans-serif;
-  }
-</style>
-</head>
-<body>
-
+{% include header.html title %}
   <div class='content'>
     {{ content }}
   </div>
-  <div class='footer'>
-      <div class='content'>
-        Tom Pearson
-      </div>
-  </div>
-</body>
-</html>
+{% include footer.html date %}
