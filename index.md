@@ -1,6 +1,6 @@
 ---
 published: true
 title: Tom Pearson - notes
-layout: post
+layout: index
 ---
 a list of things
