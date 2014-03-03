@@ -1,6 +1,7 @@
 ---
 published: true
-title: Tom Pearson - notes
+title: Tom Pearson
 layout: index
 ---
-a list of things
+
+London based developer. Visual explanations.
