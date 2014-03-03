@@ -1,6 +1,21 @@
   <div class='footer'>
-      <div class='content'>
-        {{ page.date | date: "%Y &middot; %m &middot; %d" }} &mdash; Tom Pearson
+  	<div class='meta-data'>
+        {{ page.date | date: "%Y &middot; %m &middot; %d" }}
       </div>
+
+  	<div class='posts'>
+    {% for post in site.posts %}
+      <a href="{{ post.url }}" class="post-link">{{ post.title }}</a>
+    {% endfor %}
+	</div>
+      
   </div>
+</div> <!-- everything -->
 </body>
+<script src="/scripts/d3.v3.min.js" charset="utf-8"></script>
+<script src="/scripts/zepto.js" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		console.log('222');
+	})
+</script>

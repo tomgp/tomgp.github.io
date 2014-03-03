@@ -1,10 +1,45 @@
 body{
 	font-family: sans-serif;
-	color: #333;
-	background-color: #CCE5FF;
+	min-height:100%;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #5ABC3F),
+		color-stop(0.2, #FFBB00),
+		color-stop(0.4, #F88400),
+		color-stop(0.6, #E43939),
+		color-stop(0.8, #983A98),
+		color-stop(1, #009BDE)
+	);
+	background-image: -o-linear-gradient(bottom, #5ABC3F 0%, #FFBB00 20%, #F88400 40%, #E43939 60%, #983A98 80%, #009BDE 100%);
+	background-image: -moz-linear-gradient(bottom, #5ABC3F 0%, #FFBB00 20%, #F88400 40%, #E43939 60%, #983A98 80%, #009BDE 100%);
+	background-image: -webkit-linear-gradient(bottom, #5ABC3F 0%, #FFBB00 20%, #F88400 40%, #E43939 60%, #983A98 80%, #009BDE 100%);
+	background-image: -ms-linear-gradient(bottom, #5ABC3F 0%, #FFBB00 20%, #F88400 40%, #E43939 60%, #983A98 80%, #009BDE 100%);
+	background-image: linear-gradient(to bottom, #5ABC3F 0%, #FFBB00 20%, #F88400 40%, #E43939 60%, #983A98 80%, #009BDE 100%);
 }
 
 .footer{
 	border-top: 1px dotted #999;
 	padding-top: 1rem;
+}
+
+.global-nav{
+	border-bottom: 1px dotted #999;
+	padding-bottom: 1rem;
+}
+
+.everything{
+	max-width: 600px;
+	background-color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.posts{
+	text-align: center;
+}
+
+.meta-data{
+	text-align: center;
 }

@@ -1,7 +1,7 @@
 ---
 published: true
-title: Tom Pearson
+title: Home
 layout: index
 ---
 
-London based developer. Maps, charts, visual explanations.
+London based developer. Maps, charts &amp; visual explanations.
