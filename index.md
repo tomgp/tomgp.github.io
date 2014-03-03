@@ -4,4 +4,4 @@ title: Tom Pearson
 layout: index
 ---
 
-London based developer. Visual explanations.
+London based developer. Maps, charts, visual explanations.
