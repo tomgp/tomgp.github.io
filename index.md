@@ -3,5 +3,4 @@ published: true
 title: Home
 layout: index
 ---
-
-London based developer. Maps, charts &amp; visual explanations.
+I'm a London based software developer interested in making maps, charts &amp; visual explanations.
