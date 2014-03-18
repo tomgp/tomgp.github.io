@@ -1,7 +1,12 @@
 {% include header.html %}
-  <section class='content'>
-  	<h2>Hello</h2>
+  <div class='content'>
   	{{ content }}
-  </section>
-{% include portfolio.html %}
+  	<div class='posts'>
+  		<ul>
+    {% for post in site.posts %}
+      <li> <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    	</ul>
+	</div>
+  </div>
 {% include footer.html %}
