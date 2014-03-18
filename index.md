@@ -1,6 +1,6 @@
 ---
 published: true
-title: Tom Pearson - notes
+title: Home
 layout: index
 ---
-a list of things
+I'm a London based software developer interested in making maps, charts &amp; visual explanations.
