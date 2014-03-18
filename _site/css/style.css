@@ -1,0 +1,13 @@
+body{
+	font-family: sans-serif;
+	color: #333;
+}
+
+.footer{
+	border-top: 1px dotted #999;
+	padding-top: 1rem;
+}
+
+h2{
+	font:italic bold;
+}
