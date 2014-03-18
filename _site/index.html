@@ -1,24 +1,69 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html>
-<head><title>Tom Pearson &mdash; Tom Pearson - notes</title></head>
+<head><title>Tom Pearson &mdash; Home</title></head>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <body>
-  <div class='content'>
-  	<p>a list of things</p>
-  	<div class='posts'>
-  		<ul>
-    
-      <li> <a href="/2014/02/26/silence.html">silence</a></li>
-    
-      <li> <a href="/2014/02/26/error.html">error</a></li>
-    
-    	</ul>
+<div class="everything">
+	<div class="global-nav">
+		<a href="/" class="home-link">home</a> &middot;
+		<a href="http://www.twitter.com/tomp">twitter</a> &middot;
+		<a href="http://blog.pointlineplane.co.uk">tumblr</a> &middot;
+		<a href="https://github.com/tomgp">github</a>  &middot;
+		<a href="http://bl.ocks.org/tomgp">bl.ocks</a>
 	</div>
-  </div>
+  <section class='content'>
+  	<h2>Hello</h2>
+  	<p>I’m a London based software developer interested in making maps, charts &amp; visual explanations.</p>
+  </section>
+<section class="portfolio">
+	<h2>Work</h2>
+	<p>
+		Right now I'm working in the interactive graphics team at the <a href="http://www.ft.com">Financial Times</a>.
+	</p>
+	<p>
+		Previously I was the principal developer on the <a href="http://www.bbc.co.uk/news/">BBC news website</a>'s  visual journalism team. <!--I built systems to display election results, created the popular Seat Calculator application and made countless graphics, charts and maps for breaking stories, longer form investigative pieces and contextual articles.-->
+	</p>
+	<p>
+		Freelance projects I've enjoyed working on include visualising chess games for the world chess championships, loyalty card data for a huge supermarket chain, and making a map of Rwanda.
+	</p>
+</section>
   <div class='footer'>
-      <div class='content'>
-         &mdash; Tom Pearson
+  	<div class='meta-data'>
+        
       </div>
+
+  	<div class='posts'>
+    
+      <a href="/2014/02/26/silence.html" class="post-link">silence</a>
+    
+      <a href="/2014/02/26/error.html" class="post-link">error</a>
+    
+	</div>
+      
   </div>
+</div> <!-- everything -->
 </body>
+<script src="/scripts/d3.v3.min.js" charset="utf-8"></script>
+<script src="/scripts/zepto.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var width;
+	Zepto(function($){
+		//replace all h1s in wide-heading divs with SVG text
+		$('.wide-heading').each(function(){
+			//get the text title
+			//add the SVG
+			//add the text element
+			//work out the width of the text element
+			//work pout the scsale factor and scale the text element
+			//get the height of the text element
+			//set the height of the SVG
+			//set the position of the text element
+		})
+
+		//console.log('tw' + text.node().getComputedTextLength())
+
+	})
+	
+
+</script>

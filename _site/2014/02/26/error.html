@@ -4,15 +4,56 @@
 <head><title>Tom Pearson &mdash; error</title></head>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <body>
-<a href="/" class="homelink">index</a>
+<div class="everything">
+	<div class="global-nav">
+		<a href="/" class="home-link">home</a> &middot;
+		<a href="http://www.twitter.com/tomp">twitter</a> &middot;
+		<a href="http://blog.pointlineplane.co.uk">tumblr</a> &middot;
+		<a href="https://github.com/tomgp">github</a>  &middot;
+		<a href="http://bl.ocks.org/tomgp">bl.ocks</a>
+	</div>
+<div class="wide-heading"><h1>error</h1></div>
 <div class='content'>
     <p>“The first impulse of a young and ingenuous mind is to withhold the slightest sanction from all that contains even a mixture of supposed error. When the soul is just liberated from the wretched giant’s bed of dogmas on which it has been racked and stretched ever since it began to think there is a feeling of exultation and strong hope.”</p>
 
 <p>George Eliot – Middlemarch</p>
   </div>
   <div class='footer'>
-      <div class='content'>
-        2014 &middot; 02 &middot; 26 &mdash; Tom Pearson
+  	<div class='meta-data'>
+        2014 &middot; 02 &middot; 26
       </div>
+
+  	<div class='posts'>
+    
+      <a href="/2014/02/26/silence.html" class="post-link">silence</a>
+    
+      <a href="/2014/02/26/error.html" class="post-link">error</a>
+    
+	</div>
+      
   </div>
+</div> <!-- everything -->
 </body>
+<script src="/scripts/d3.v3.min.js" charset="utf-8"></script>
+<script src="/scripts/zepto.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var width;
+	Zepto(function($){
+		//replace all h1s in wide-heading divs with SVG text
+		$('.wide-heading').each(function(){
+			//get the text title
+			//add the SVG
+			//add the text element
+			//work out the width of the text element
+			//work pout the scsale factor and scale the text element
+			//get the height of the text element
+			//set the height of the SVG
+			//set the position of the text element
+		})
+
+		//console.log('tw' + text.node().getComputedTextLength())
+
+	})
+	
+
+</script>
