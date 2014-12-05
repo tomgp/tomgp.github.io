@@ -2,12 +2,95 @@
 <meta charset="utf-8">
 <html>
 <head><title>Tom Pearson &mdash; {{ page.title }}</title></head>
-<link rel="stylesheet" type="text/css" href="//www.toffeemilkshake.co.uk/tgp-ui-styles/ui-style.css">
+<style type="text/css">
+	*{
+		font-family: sans-serif;
+	}
+
+	section{
+		padding-bottom:35px;
+	}
+	td{
+		vertical-align: top;
+	}
+</style>
+<style type="text/css">
+	.source{
+		display:block;
+	}
+
+	.loading-text {
+	    -webkit-animation-name: blinker;
+	    -webkit-animation-duration: 1s;
+	    -webkit-animation-timing-function: linear;
+	    -webkit-animation-iteration-count: infinite;
+
+	    -moz-animation-name: blinker;
+	    -moz-animation-duration: 1s;
+	    -moz-animation-timing-function: linear;
+	    -moz-animation-iteration-count: infinite;
+
+	    animation-name: blinker;
+	    animation-duration: 1s;
+	    animation-timing-function: linear;
+	    animation-iteration-count: infinite;
+	}
+
+	@-moz-keyframes blinker {  
+	    0% { opacity: 1.0; }
+	    50% { opacity: 0.0; }
+	    100% { opacity: 1.0; }
+	}
+
+	@-webkit-keyframes blinker {  
+	    0% { opacity: 1.0; }
+	    50% { opacity: 0.0; }
+	    100% { opacity: 1.0; }
+	}
+
+	@keyframes blinker {  
+	    0% { opacity: 1.0; }
+	    50% { opacity: 0.0; }
+	    100% { opacity: 1.0; }
+	}
+</style>
+<style type="text/css">
+.columns {
+	-webkit-column-gap: 40px;
+	-moz-column-gap: 40x;
+	column-gap: 40px;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3; 
+	min-height: 100px;
+}
+
+@media all and (max-width: 700px) {
+	body .columns {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}
+
+@media all and (min-width: 701px) and (max-width: 950px) {
+	body .columns {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	} 
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1) {
+	.columns {
+		-webkit-column-count: none;
+		/* Chrome, Safari, Opera */
+		-moz-column-count: none;
+		/* Firefox */
+		column-count: none; 
+	}
+}
+
+</style>
 <body>
-<div class="everything">
-	<div class="global-nav">
-		<a href="/" class="home-link">home</a> &middot;
-		<a href="http://blog.toffeemilkshake.co.uk">tumblr</a> &middot;
-		<a href="https://github.com/tomgp">github</a>  &middot;
-		<a href="http://bl.ocks.org/tomgp">bl.ocks</a>
-	</div>
+	<div class="columns">

@@ -1,8 +1,7 @@
 ---
 published: true
 title: error
-layout: post
+layout: quotation
+attribution: George Eliot, Middlemarch
 ---
-"The first impulse of a young and ingenuous mind is to withhold the slightest sanction from all that contains even a mixture of supposed error. When the soul is just liberated from the wretched giant's bed of dogmas on which it has been racked and stretched ever since it began to think there is a feeling of exultation and strong hope."
-
-George Eliot -- Middlemarch
+The first impulse of a young and ingenuous mind is to withhold the slightest sanction from all that contains even a mixture of supposed error. When the soul is just liberated from the wretched giant's bed of dogmas on which it has been racked and stretched ever since it began to think there is a feeling of exultation and strong hope.

@@ -2,46 +2,133 @@
 <meta charset="utf-8">
 <html>
 <head><title>Tom Pearson &mdash; Home</title></head>
-<link rel="stylesheet" type="text/css" href="//www.toffeemilkshake.co.uk/tgp-ui-styles/ui-style.css">
+<style type="text/css">
+	*{
+		font-family: sans-serif;
+	}
+
+	section{
+		padding-bottom:35px;
+	}
+	td{
+		vertical-align: top;
+	}
+</style>
+<style type="text/css">
+	.source{
+		display:block;
+	}
+
+	.loading-text {
+	    -webkit-animation-name: blinker;
+	    -webkit-animation-duration: 1s;
+	    -webkit-animation-timing-function: linear;
+	    -webkit-animation-iteration-count: infinite;
+
+	    -moz-animation-name: blinker;
+	    -moz-animation-duration: 1s;
+	    -moz-animation-timing-function: linear;
+	    -moz-animation-iteration-count: infinite;
+
+	    animation-name: blinker;
+	    animation-duration: 1s;
+	    animation-timing-function: linear;
+	    animation-iteration-count: infinite;
+	}
+
+	@-moz-keyframes blinker {  
+	    0% { opacity: 1.0; }
+	    50% { opacity: 0.0; }
+	    100% { opacity: 1.0; }
+	}
+
+	@-webkit-keyframes blinker {  
+	    0% { opacity: 1.0; }
+	    50% { opacity: 0.0; }
+	    100% { opacity: 1.0; }
+	}
+
+	@keyframes blinker {  
+	    0% { opacity: 1.0; }
+	    50% { opacity: 0.0; }
+	    100% { opacity: 1.0; }
+	}
+</style>
+<style type="text/css">
+.columns {
+	-webkit-column-gap: 40px;
+	-moz-column-gap: 40x;
+	column-gap: 40px;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3; 
+	min-height: 100px;
+}
+
+@media all and (max-width: 700px) {
+	body .columns {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}
+
+@media all and (min-width: 701px) and (max-width: 950px) {
+	body .columns {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	} 
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1) {
+	.columns {
+		-webkit-column-count: none;
+		/* Chrome, Safari, Opera */
+		-moz-column-count: none;
+		/* Firefox */
+		column-count: none; 
+	}
+}
+
+</style>
 <body>
-<div class="everything">
-	<div class="global-nav">
-		<a href="/" class="home-link">home</a> &middot;
-		<a href="http://blog.toffeemilkshake.co.uk">tumblr</a> &middot;
-		<a href="https://github.com/tomgp">github</a>  &middot;
-		<a href="http://bl.ocks.org/tomgp">bl.ocks</a>
-	</div>
+	<div class="columns">
+<h1>Tom Pearson</h1>
+<a href="http://blog.toffeemilkshake.co.uk">is on tumblr</a>
+<!--
 
-  <section class='content reading'>
-  	<h1>Tom Pearson</h1>
-  	<h2 id="maps_charts__visual_explanations">Maps, charts &amp; visual explanations.</h2>
-  </section>
-<section class="reading work">
-	<p>
-		Currently <a href="http://www.ft.com">Financial Times</a>.</p> 
-	<p> Previously <a href="http://www.bbc.co.uk/news/">BBC news website</a> and <a href="http://www.nhm.ac.uk">The Natural History Museum</a>.</p>
-	<p> Occasionally <a href="http://www.aftertheflood.co/">After the Flood</a></p>
-	</p>
+<section class="data" data-location="/data/books.csv" data-decorator="books">
+  reading/ read
+  	
+    	<div class="loading-text"><p>Loading</p></div>
+  	  
 </section>
-  <div class='footer'>
 
-  	<div class='meta-data'>
-        
-      </div>
+<section class="quotation" data-location="" data-decorator="">
+  silence
+  	
+  	<blockquote>
+  		<p>If we had a keen vision and feeling of all ordinary human life, it would be like hearing the grass grow and the squirrel’s heart beat, and we should die of that roar which lies on the other side of silence.</p>
+  	</blockquote>
+  	&mdash; George Eliot, Middlemarch
+  	  
+</section>
 
-  	<!-- <div class='posts'>
-    
-      <a href="/2014/02/26/silence.html" class="post-link">silence</a>
-    
-      <a href="/2014/02/26/error.html" class="post-link">error</a>
-    
-	</div> -->
-      
-  </div>
-</div> <!-- everything -->
+<section class="quotation" data-location="" data-decorator="">
+  error
+  	
+  	<blockquote>
+  		<p>The first impulse of a young and ingenuous mind is to withhold the slightest sanction from all that contains even a mixture of supposed error. When the soul is just liberated from the wretched giant’s bed of dogmas on which it has been racked and stretched ever since it began to think there is a feeling of exultation and strong hope.</p>
+  	</blockquote>
+  	&mdash; George Eliot, Middlemarch
+  	  
+</section>
+
+-->
+
+</div> <!-- columns -->
 </body>
 <script src="/scripts/d3.v3.min.js" charset="utf-8"></script>
-<script src="/scripts/zepto.js" charset="utf-8"></script>
-<script type="text/javascript">
-	Zepto(function($){  } })
-</script>
+<script src="/scripts/books-read.js" charset="utf-8"></script>
+<script src="/scripts/diary.js" charset="utf-8"></script>
