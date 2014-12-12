@@ -1,5 +1,4 @@
 'use strict';
-console.log('!');
 
 var containers = d3.selectAll('[data-decorator="books"]')
 
