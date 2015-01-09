@@ -1,1 +1,1 @@
-console.log('diray under construction')
+console.log('diary under construction')
