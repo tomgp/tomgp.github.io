@@ -1,5 +1,4 @@
 'use strict';
-console.log('!');
 
 var containers = d3.selectAll('[data-decorator="books"]')
 
@@ -21,7 +20,7 @@ containers.each(function(d,i){
 
 		//filter the data...
 		container.select('.loading-text').remove();
-		
+
 		var table = container.insert('table');
 
 		table.append('thead').selectAll('th')
