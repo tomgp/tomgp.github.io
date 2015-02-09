@@ -3,30 +3,43 @@
 <html>
 <head>
 	<title>Tom Pearson &mdash; {{ page.title }}</title>
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 </head>
 <style type="text/css">
 	*{
 		font-family: sans-serif;
 	}
 
+	h1{
+		display:none;
+	}
+
+	a{
+		color:#000;
+		font-weight:bold;
+	}
+
+	.double{
+		width:200%;
+	}
+
+	.half{
+		width:50%;
+	}
+
+	.half.left{
+		margin-left:-50%;
+	}
+
+	.horizontal{
+		display:inline-block;
+		vertical-align: top;
+	}
+
+	svg.big-title{	}
+
 	section{
 		padding-bottom:35px;
+		overflow:hidden;
 	}
 	td{
 		vertical-align: top;
@@ -39,6 +52,18 @@
 	}
 	.stretchy-image{
 			width:100%;
+	}
+	blockquote{
+		padding:0;
+		margin:0;
+	}
+	section{
+		padding:0;
+		margin:0;
+	}
+	body{
+		padding:0;
+		margin:0;
 	}
 </style>
 <style type="text/css">
@@ -82,10 +107,15 @@
 	}
 </style>
 <style type="text/css">
+.subhead{
+	background:#000;
+	color:#FFF;
+}
+
 .columns {
-	-webkit-column-gap: 40px;
-	-moz-column-gap: 40x;
-	column-gap: 40px;
+	-webkit-column-gap: 0px;
+	-moz-column-gap: 0x;
+	column-gap: 0px;
 	-webkit-column-count: 3;
 	-moz-column-count: 3;
 	column-count: 3;
@@ -115,6 +145,12 @@
 		/* Firefox */
 		column-count: none;
 	}
+}
+
+h4{
+	background:#000;
+	color:#FFF;
+	font-weight:normal;
 }
 
 </style>
