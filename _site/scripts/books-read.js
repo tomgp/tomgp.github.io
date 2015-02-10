@@ -12,33 +12,54 @@ containers.each(function(d,i){
 			return d;
 		});
 
+		var unread = data.filter(function(a){
+			return (String(a.date) === 'Invalid Date');
+		});
+
 		var dataByDate = data.sort(function(a, b){
 			return b.date.getTime() - a.date.getTime();
 		});
 
-		console.log(dataByDate);
-
-		//filter the data...
 		container.select('.loading-text').remove();
-		
-		var table = container.insert('table');
 
-		table.append('thead').selectAll('th')
-			.data(['Title','Author',''])
-			.enter()
-		 	.append('th')
-		 	.text(function(d){ return d; })
+		var carousel = container.append('div').attr('class','double');
 
-		table.append('tbody').selectAll('tr')
-			.data(dataByDate.slice(0, 10)) //just the first 10
-			.enter().append('tr')
-				.each(function(row,i){
-					d3.select(this).selectAll('td')
-						.data(['title','authors','rating'])
-							.enter().append('td').text(function(col){
-								return row[col]
-							});
-				})
+		var readTable = carousel.append('table').attr({
+			'id':'read-table',
+			'class':'half horizontal'
+		});
+		readTable.call(tableHeadings);
+		readTable.call(tableData, dataByDate.slice(0, 10));
+
+		var toReadTable = carousel.append('table').attr({
+			'id':'to-read-table',
+			'class':'half horizontal'
+		});
+		toReadTable.call(tableHeadings);
+		toReadTable.call(tableData, unread.reverse().slice(0, 10));
+
+
+		function tableHeadings(g){
+			return g.append('thead').selectAll('th')
+				.data(['Title','Author',''])
+				.enter()
+			 	.append('th')
+			 	.text(function(d){ return d; });
+		}
+
+		function tableData(g, data){
+			return g.append('tbody').selectAll('tr')
+				.data(data) //just the first 10
+				.enter().append('tr')
+					.each(function(row,i){
+						d3.select(this).selectAll('td')
+							.data(['title','authors','rating'])
+								.enter().append('td').text(function(col){
+									return row[col]
+								});
+					});
+		}
+
 	});
 })
 
