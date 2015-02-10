@@ -12,7 +12,7 @@
 <hr>
 {% for post in site.posts %}
 <section class="{{ post.layout }}" data-location="{{ post.csv }}" data-decorator="{{ post.decorator }}">
-  <h4>{{ post.title }}</h4>
+  {% if post.layout != "svg" %}<h4>{{ post.title }}</h4>{% endif %}
   	{% if post.layout == "data" %}
     	<div class="loading-text">{{ post.content }}</div>
   	{% elsif post.layout == "quotation" %}
