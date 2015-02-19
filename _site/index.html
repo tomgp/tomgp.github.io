@@ -4,6 +4,7 @@
 <head>
 	<title>Tom Pearson &mdash; Home</title>
 </head>
+
 <style type="text/css">
 	*{
 		font-family: sans-serif;
@@ -13,9 +14,25 @@
 		display:none;
 	}
 
+	h4{
+		background:#000;
+		color:#FFF;
+		font-weight:normal;
+		padding-top:3px;
+	}
+
 	a{
-		color:#000;
-		font-weight:bold;
+		border: 1px solid blue;
+		text-decoration: none;
+		color: blue;
+		padding: 2px;
+		padding-top: 4px;
+	}
+
+	a:hover{
+		border: 1px dashed blue;
+		color:white;
+		background:blue;
 	}
 
 	.double{
@@ -108,6 +125,7 @@
 </style>
 <style type="text/css">
 .subhead{
+	padding-top:3px;
 	background:#000;
 	color:#FFF;
 }
@@ -147,11 +165,7 @@
 	}
 }
 
-h4{
-	background:#000;
-	color:#FFF;
-	font-weight:normal;
-}
+
 
 </style>
 <body>
@@ -169,8 +183,18 @@ h4{
 <a href="http://blog.toffeemilkshake.co.uk">Tumblr</a>
 <hr>
 
+<section class="link" data-location="" data-decorator="">
+  <h4>Deaths of the Iliad</h4>
+
+  	
+        <p>Deucalion next – he lanced his arm with a bronze shod spear, he splitted the Trojan through where the elbow-tendons grip and there he stood, waiting Achilles, arm dangling heavy, staring death in the face – and Achilles chopped his neck and his sword sent head and helmet flying off together and marrow bubbling up from the clean-cut neckbone. Down he went, his corpse full length on the ground </p>
+        <a href="http://deathsoftheiliad.tumblr.com/about">about</a>
+  	
+</section>
+
 <section class="data" data-location="/data/books.csv" data-decorator="books">
-  <h4>reading/ read</h4>
+  <h4>Book list</h4>
+
   	
     	<div class="loading-text"><p>Loading</p></div>
   	
@@ -178,28 +202,32 @@ h4{
 
 <section class="quotation" data-location="" data-decorator="">
   <h4>silence</h4>
+
   	
   	<blockquote>
   		<p>If we had a keen vision and feeling of all ordinary human life, it would be like hearing the grass grow and the squirrel’s heart beat, and we should die of that roar which lies on the other side of silence.</p>
   	</blockquote>
   	&mdash; George Eliot, Middlemarch
-  	
+    
 </section>
 
 <section class="quotation" data-location="" data-decorator="">
   <h4>error</h4>
+
   	
   	<blockquote>
   		<p>The first impulse of a young and ingenuous mind is to withhold the slightest sanction from all that contains even a mixture of supposed error. When the soul is just liberated from the wretched giant’s bed of dogmas on which it has been racked and stretched ever since it began to think there is a feeling of exultation and strong hope.</p>
   	</blockquote>
   	&mdash; George Eliot, Middlemarch
-  	
+    
 </section>
 
 <section class="svg" data-location="" data-decorator="">
-  <h4></h4>
+  
+
   	
   	   <object class='stretchy-image' data='/images/vibration1.svg' type='image/svg+xml' />
+<p><a href='http://bl.ocks.org/tomgp/dc6c6301e68b8934e2fd'>vibrational effect</a></p>
   	
 </section>
 
@@ -214,4 +242,5 @@ h4{
 d3.select('body').insert('div',"h1:first-child");
 
 </script>
+</html>
 
