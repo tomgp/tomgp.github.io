@@ -20,8 +20,11 @@
   		{{post.content}}
   	</blockquote>
   	&mdash; {{post.attribution}}
+    {% elsif post.layout == "link" %}
+        {{post.content}}
   	{% else %}
   	   {{ post.content }}
+       <a href="{{ post.link }}">{{ post.title }}</a>
   	{% endif %}
 </section>
 {% endfor %}
