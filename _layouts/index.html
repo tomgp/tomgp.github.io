@@ -13,6 +13,7 @@
 {% for post in site.posts %}
 <section class="{{ post.layout }}" data-location="{{ post.csv }}" data-decorator="{{ post.decorator }}">
   {% if post.layout != "svg" %}<h4>{{ post.title }}</h4>{% endif %}
+
   	{% if post.layout == "data" %}
     	<div class="loading-text">{{ post.content }}</div>
   	{% elsif post.layout == "quotation" %}
@@ -21,10 +22,10 @@
   	</blockquote>
   	&mdash; {{post.attribution}}
     {% elsif post.layout == "link" %}
-        {{post.content}}
+        {{ post.content }}
+        <a href="{{ post.link }}">{{ post.linktext }}</a>
   	{% else %}
   	   {{ post.content }}
-       <a href="{{ post.link }}">{{ post.title }}</a>
   	{% endif %}
 </section>
 {% endfor %}
