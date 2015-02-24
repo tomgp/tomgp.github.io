@@ -1,6 +1,6 @@
 ---
 published: true
-title: Bivariate Choropleths Maps: A Why-not Guide
+title: Bivariate Choropleths Maps A Why-not Guide
 layout: link
 link: http://www.toffeemilkshake.co.uk/pages/bivariate-choropleth/
 linktext: read more
