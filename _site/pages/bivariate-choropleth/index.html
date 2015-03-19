@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bivariate Choropleths Maps: A Why-not Guide</title>
+  <style>
+      sup{
+        vertical-align: top;
+        font-size: 0.8rem;
+      }
+
+      body{
+        font-family:sans-serif;
+      }
+      .column{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width:800px;
+      }
+      img{
+        width:100%;
+        padding-top:1rem;
+        padding-bottom:1rem;
+      }
+      .note img{
+        display:block;
+        width:30%;
+      }
+
+      h2{
+        font-size:1.3rem;
+      }
+
+      blockquote{
+        font-family:serif;
+      }
+      .date{
+        border-top:1px solid #999;
+        color:#999;
+        padding-bottom:10px;
+        padding-top:10px;
+      }
+
+      .content{
+        max-width:600px;
+        line-height:1.5rem;
+        font-size:1.1rem;
+      }
+
+      .note{
+        max-width:600px;
+        font-size:0.8rem;
+        line-height:1.2rem;
+      }
+  </style>
+</head>
+<body>
+  <div class="column">
+  <h1>Bivariate Choropleths Maps: A Why-not Guide</h1>
+  <div class="content">
+    <p>I put this page together in response to what I saw as a gap in Josh Stevens&rsquo; excellent, easy to follow tutorial: <a href="http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/">Bivariate Choropleth Maps: A How-to Guide</a>. i.e. What are the draw backs of the approach from an information design perspective and what other methods are available for showing similar information? Just because we can do something it doesn't mean we should.</p>
+    <p class="note">(A choropleth is <a href="http://en.wikipedia.org/wiki/Choropleth_map">a thematic map in which areas are shaded or patterned in proportion to the measurement of the statistical variable being displayed on the map, such as population density or per-capita income.</a> A bivariate choropleth is one which attempts to show two variables on top of each other, see pic below)</p>
+  </div>
+  <div class="content">
+    <p>Stevens points out near the start of his tutorial that:</p>
+      <blockquote>
+        Most cartographers advise against maps with 9 or more classes. Thus it is recommended to keep things super simple when creating bivariate choropleth maps by not exceeding 3 classes in each variable.
+      </blockquote>
+    <p>But the dificulties with bivariate maps are not only down to the number of classes they require.</p>
+    <img src="tufte1.jpg" alt="" title="A photo of a page from The Visual Display of Quantitative Information">
+    As usual Edward Tufte has already given this matter some thought, here&rsquo;s a bit from from <i>The Visual Display of Quantitative Information</i>:
+    <blockquote>
+      <p>The Complexity of multifunctioning elements can sometimes turn data graphics into visual puzzles, crypto-graphical mysteries for the viewer to decode. A sure sign of a puzzle is that the graphic must be interpreted through a verbal rather than a visual process.</p>
+      <p>For example, despite its clever multifunctioning data measure, formed by crossing two four-color grids, this is a puzzle graphic. Deployed here, in a feat of technological virtuosity, are 16 shades of color spread on 3,056 counties, a monument to a sophisticated computer graphics system<sup>1</sup>. But it is surely a graphic experienced verbally, not visually. Over and over, the viewers must run little phrases through their minds, trying to make sense out of the visual montage: <br>&ldquo;Now let&rsquo;s see, purple represents counties where there are both high levels of male cardiovascular disease mortality <i>and</i> 11.6 to 56.0 percent of households have more than 1.01 persons per room. &hellip;What does that mean anyway?..And the yellow-green counties&hellip;&rdquo;<br> By contrast, in a non-puzzle graphic, the translation of visual image flows right <i>through</i> the verbal decoder initially necessary to understand the graphic. As Paul Valéry wrote, &ldquo;seeing is forgetting the name of the thing one sees&rdquo;</p>
+    </blockquote>
+  </div>
+  <div class="note">
+    <blockquote><sup>1.</sup> The technique is described in Vincent P. Barabba and Alva L Finkner,
+      &ldquo;<a href="https://books.google.co.uk/books?id=FRQBYsncAJkC&pg=PA67&lpg=PA67&dq=%22the+utilization+of+primary+printing+colors+in+displaying+more+than+one+variable%22&source=bl&ots=7x9Cv-rgyb&sig=B-rfrKgMJj3RCV7YhslHH7_O_Eg&hl=en&sa=X&ei=nGbsVPj2OKep7Abh4YGIAg&ved=0CCEQ6AEwAA#v=onepage&q=%22the%20utilization%20of%20primary%20printing%20colors%20in%20displaying%20more%20than%20one%20variable%22&f=false">The Utilization of Primary Printing Colors in Displaying More Than One Variable &mdash; Vincent P Barabba, A L Finkner</a>&rdquo; in Bureau of the Census, Techincal Paper No. 43, <i>Graphical Presentation of Statistical Information</i>(Washington DC, 1978), 14-21. The maps are assesed in Howard Wainer and C.M. Francolini,
+      &ldquo;<a href="http://www.tandfonline.com/doi/abs/10.1080/00031305.1980.10483006#.VOxN2lOsWbE">An Empirical Inquiry concerning Human Understanding of Two-Variable Color Maps</a>&rdquo; <i>The American Statistician</i> 34 (1980), 81-93
+  </div>
+  <div class="content">
+    <p>So because of this need to mentally reiterate the relationship between the variables and their values bivariate choropleths can be slow and confusing to read &mdash; not only that but their intent can be obscure &ldquo;What does that mean anyway?&rdquo;; this problem persists even in the simplest 2x2 form with only four classes. </p><p>So what should we use instead? As usual the answer depends on what you want to show and if you want to show several different things you may need several different graphics. Providing a clear purpose for a graphic can help with finding the right method of presentation. If you&rsquo;re interested in exploring geographical distribution how about two separate coropleth maps, one for each variable? In Stevens&rsquo; original post he presents this image:
+
+      <img class="inline" src="choro-math.png">
+
+      I think the two maps on the left are much easier to read than the combined figure on the right, both in terms of the distribution of individual variables and in terms of seeing relationships between the variables; this is dificult in both cases but near impossible with the combined map. Example: on the second map there&rsquo;s a very obvious gap at the bottom &mdash; around Texas, New Mexico etc. This is major feature of the data&rsquo;s spatial distribution but it would be really hard to spot if you only had the bivariate map <sup>1</sup>. As it stands, the final image is less than the sum of its parts. On the other hand, if your aim is to explore the relationship between two variables how about a good old scatter plot? Encoding values in space rather than in colour will make it significantly easier to see any correlation. Space is a much better visual dimension for comparing values than colour which is best used to encode <a href="http://www.infovis-wiki.net/index.php?title=Visual_Variables#Characteristics">selective variables rather than a quantitative ones</a> (this is an issue that choropleths suffer from in general).</p>
+    <p>In short, there are probably good uses for this type of map but they&rsquo;re rare. Working out what questions you hope your graphic to address at the start of the design process will help you towards the right presentation method <sup>2</sup>.</p>
+  </div>
+  <div class="note"><sup>1</sup> My hunch is that this is because for colour our value perception &mdash; how light or dark a colour is &mdash; greatly overrides our hue peception so all the colours of similar darkness tend to read as the same. We effectively see this:
+    <img src="mono.png">
+  </div>
+  <div class="note"><sup>2</sup> William Cleveland's graphic elements heirachy is helpful for working out what visual properties to encode your most important information with.
+    <a href="cleveland.jpg"><img src="cleveland.jpg"></a>
+  </div>
+<div class="date">Tom Pearson &mdash; Feburary 2015</div>
+</div>
+</body>
+
+</html>

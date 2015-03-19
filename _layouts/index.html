@@ -1,11 +1,10 @@
 {% include header.html %}
-
-<h1>Tom Pearson</h1>
-<p class="subhead">
-  Maps, charts &amp; visual explanations
-</p>
-<a href="http://blog.toffeemilkshake.co.uk">Tumblr</a>
-<hr>
+<section><h1>Tom Pearson</h1>
+  <p class="subhead">
+    Maps, charts &amp; visual explanations
+  </p>
+  <a href="http://blog.toffeemilkshake.co.uk">Tumblr</a>
+</section>
 {% for post in site.posts %}
 <section class="{{ post.layout }}" data-location="{{ post.csv }}" data-decorator="{{ post.decorator }}">
   {% if post.layout != "svg" %}<h4>{{ post.title }}</h4>{% endif %}

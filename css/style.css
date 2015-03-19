@@ -34,3 +34,7 @@ p{
 .meta-data{
 	text-align: center;
 }
+
+section{
+	padding: 0px 10px 20px 10px;
+}
