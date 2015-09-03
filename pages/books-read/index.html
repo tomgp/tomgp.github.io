@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="/scripts/d3.v3.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+  <style>
+      sup{
+        vertical-align: top;
+        font-size: 0.8rem;
+      }
+
+      body{
+        font-family:sans-serif;
+      }
+      .column{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width:800px;
+      }
+      img{
+        width:100%;
+        padding-top:1rem;
+        padding-bottom:1rem;
+      }
+      .note img{
+        display:block;
+        width:30%;
+      }
+
+      td{
+        vertical-align: top;
+        width:25%;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        padding-bottom: 0.5rem;
+      }
+
+      th{
+        text-align: left;
+      }
+
+      .super-recommended {
+        background-color: #FF0;
+        font-weight: bold;
+      }
+
+      .recommended {
+        background-color: #FFB;
+        font-weight: bold;
+      }
+
+      .super-un-recommended {
+        color: #BBB;
+      }
+
+      .un-recommended {
+        color: #666;
+      }
+
+      h2{
+        font-size:1.3rem;
+      }
+
+      blockquote{
+        font-family:serif;
+      }
+      .date{
+        border-top:1px solid #999;
+        color:#999;
+        padding-bottom:10px;
+        padding-top:10px;
+      }
+
+      .content{
+        max-width:600px;
+        line-height:1.5rem;
+        font-size:1.1rem;
+      }
+
+      .note{
+        max-width:600px;
+        font-size:0.8rem;
+        line-height:1.2rem;
+      }
+  </style>
+</head>
+<body>
+<div class="column">
+  <h1>Books</h1>
+  <p>I started recording what books I was reading at the start of 2009 on the <a href="https://www.goodreads.com/user/show/6166594-tom">Goodreads</a> website. Then I decided a spreadsheet would do just fine. <a href="/data/books.csv">Here it is</a></p> 
+  <div class="table-container">
+    Loading book data...
+  </div>
+</div>
+
+<div class="date">Tom Pearson</div>
+</div>
+</body>
+<script>
+  d3.csv('/data/books.csv', function(data){
+    var sheetDateFormat = d3.time.format("%Y-%m-%d");
+    var tableDateFormat = d3.time.format("%b %Y");
+    data = data.map(function(d){
+      d.date = sheetDateFormat.parse(d.date);
+      d.visible = true;
+      return d;
+    })
+    var columns = ['authors','title','date','rating'];
+    var table = d3.select('.table-container')
+      .text('')
+      .append('table');
+
+    table.append('tr')
+      .attr('class','header-row')
+      .selectAll('th')
+        .data(columns)
+      .enter()
+        .append('th').html(function(d){
+          var capitalised = d && d[0].toUpperCase() + d.slice(1);
+          return '<a href="#" class="sort-link" data-category="'+d+'">' + capitalised + '</a>';
+        });
+
+    table
+      .selectAll('tr.data-row')
+        .data(data.filter(function(d){ return d.visible; }))
+      .enter()
+        .append('tr')
+        .attr('class',function(record){
+          if(record.rating == '++') return 'super-recommended';
+          if(record.rating == '+') return 'recommended';
+          if(record.rating == '--') return 'super-un-recommended';
+          if(record.rating == '-') return 'un-recommended';
+        })
+        .each(function(record){
+          d3.select(this)
+            .selectAll('td')
+              .data(columns)
+            .enter()
+              .append('td')
+              .text(function(d){
+                if(d == 'date' && record[d]){
+                  return tableDateFormat( record[d] );
+                }
+                return record[d];
+              });
+        })
+
+    
+  })
+</script>
+</html>
