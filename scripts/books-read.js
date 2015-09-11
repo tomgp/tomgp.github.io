@@ -22,7 +22,7 @@ containers.each(function(d,i){
 
 		container.select('.loading-text').remove();
 
-		var carousel = container.append('div').attr('class','double');
+		var carousel = container.insert('div').attr('class','double');
 
 		var readTable = carousel.append('table').attr({
 			'id':'read-table',
