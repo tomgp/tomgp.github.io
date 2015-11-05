@@ -100,14 +100,24 @@
 </div>
 </body>
 <script>
+  'use strict';
   d3.csv('/data/books.csv', function(data){
+    var sortOn = {
+      date: function(a,b){ return b.date.getTime() - a.date.getTime(); }
+    }
     var sheetDateFormat = d3.time.format("%Y-%m-%d");
     var tableDateFormat = d3.time.format("%b %Y");
+
     data = data.map(function(d){
-      d.date = sheetDateFormat.parse(d.date);
-      d.visible = true;
+      if(d.date){
+        d.read = true;
+        d.date = sheetDateFormat.parse(d.date);
+      }else{
+        d.read = false;
+      }
       return d;
-    })
+    });
+
     var columns = ['authors','title','date','rating'];
     var table = d3.select('.table-container')
       .text('')
@@ -125,7 +135,10 @@
 
     table
       .selectAll('tr.data-row')
-        .data(data.filter(function(d){ return d.visible; }))
+        .data(data
+            .filter(function(d){ return d.read; })
+            .sort(sortOn.date)
+        )
       .enter()
         .append('tr')
         .attr('class',function(record){
