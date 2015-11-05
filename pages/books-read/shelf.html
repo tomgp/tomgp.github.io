@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="/scripts/d3.v3.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book shelf</title>
+	</head>
+<body>
+</body>
+<script>
+	<script>
+	'use strict';
+	d3.csv('/data/books.csv', function(data){
+		
+		var sortOn = {
+			date: function(a,b){ return b.date.getTime() - a.date.getTime(); }
+		}
+
+		var sheetDateFormat = d3.time.format("%Y-%m-%d");
+
+		data = data.map(function(d){
+			if(d.date){
+				d.read = true;
+				d.date = sheetDateFormat.parse(d.date);
+			}else{
+				d.read = false;
+			}
+			return d;
+		});
+	});
+</script>
+</html>
