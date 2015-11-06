@@ -5,13 +5,22 @@
 	<script src="/scripts/d3.v3.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Book shelf</title>
-	</head>
+	<style>
+		body{
+			background-color: #000;
+		}
+	</style>
+</head>
 <body>
 </body>
 <script>
 	'use strict';
+	var shelfHeight = 400;
+	var nomalSpacing = 20;
+	var pageWidth = 0.5;
+
 	d3.csv('/data/books.csv', function(data){
-		
+		//SORT OUT THE DATA
 		var sortOn = {
 			date: function(a,b){ return b.date.getTime() - a.date.getTime(); }
 		}
@@ -28,16 +37,64 @@
 			d.pages = Number(d.pages);
 			return d;
 		});
+
 		var years = {};
+
 		data.forEach(function(d){
 			if(d.date){
 				years[d.date.getFullYear()] = true;
 			}
 		});
 
-		years = Object.keys(years);
+		years = Object.keys(years).map(function(y){
+			var books = data.filter(function(d){
+				if(d.date){
+					return (d.date.getFullYear() == y);
+				}
+				return false;
+			});
 
-		console.log(years);
+			return {
+				year: y,
+				books: books, //TODO add cumulative pages + gaps per year 
+				pageCount: d3.sum(books, function(b){ return b.pages; })
+			};
+		});
+
+		var max = years.reduce(function(prev, cur, i, a){
+			return {
+				books: Math.max(prev.books, cur.books.length),
+				pages: Math.max(prev.pages, cur.pageCount),
+			};
+		}, {books:0, pages:0});
+
+		
+		var width = (max.pages * pageWidth) + (max.books * nomalSpacing);
+
+		//DRAW THE STUFF
+
+		d3.select('body')
+			.append('svg')
+				.attr({
+					height: years.length * shelfHeight,
+					width: (max.pages * pageWidth) + (max.books * nomalSpacing)
+				})
+			.selectAll('g.shelf')
+				.data(years).enter()
+			.append('g')
+				.attr({
+					class:'shelf',
+					transform:function(d,i){
+						return 'translate(0,' + (i * shelfHeight) + ')';
+					}
+				})
+			.call(function(shelf){
+				shelf.selectAll('g')
+					.data(function(d){ return d.books; })
+						.enter()
+					.append('g');
+			})
+
 	});
 </script>
 </html>
