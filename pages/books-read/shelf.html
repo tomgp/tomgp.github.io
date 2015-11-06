@@ -9,7 +9,6 @@
 <body>
 </body>
 <script>
-	<script>
 	'use strict';
 	d3.csv('/data/books.csv', function(data){
 		
@@ -26,8 +25,19 @@
 			}else{
 				d.read = false;
 			}
+			d.pages = Number(d.pages);
 			return d;
 		});
+		var years = {};
+		data.forEach(function(d){
+			if(d.date){
+				years[d.date.getFullYear()] = true;
+			}
+		});
+
+		years = Object.keys(years);
+
+		console.log(years);
 	});
 </script>
 </html>
