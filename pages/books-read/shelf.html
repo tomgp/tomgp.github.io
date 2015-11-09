@@ -38,13 +38,14 @@
 			return d;
 		});
 
-		var years = {};
-
-		data.forEach(function(d){
+		var years = splitOn(data, function(d){
 			if(d.date){
-				years[d.date.getFullYear()] = true;
+				return d.date.getFullYear();
 			}
+			return 'on the stack';
 		});
+
+		console.log(years);
 
 		years = Object.keys(years).map(function(y){
 			var books = data.filter(function(d){
@@ -96,5 +97,17 @@
 			})
 
 	});
+
+function splitOn(array, keyFunction){
+	if(!keyFunction) keyFunction = function(d,i){ return i; };
+	var splitUp = {};
+	
+	array.forEach(function(d,i){
+		var key = keyFunction(d,i);
+		if(!splitUp[key]) splitUp[key] = [];
+		splitUp[key].push(d);
+	})
+	return splitUp;
+}
 </script>
 </html>
