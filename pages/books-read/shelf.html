@@ -8,6 +8,7 @@
 	<style>
 		body{
 			background-color: #000;
+			font-family: sans-serif;
 		}
 	</style>
 </head>
@@ -17,7 +18,7 @@
 	'use strict';
 	var shelfHeight = 400;
 	var nomalSpacing = 20;
-	var pageWidth = 0.5;
+	var pageWidth = 0.2;
 
 	d3.csv('/data/books.csv', function(data){
 		//SORT OUT THE DATA
@@ -45,7 +46,7 @@
 			return 'on the stack';
 		});
 
-		console.log(years);
+		console.log(shelfLayout( years['2009'], pageWidth, nomalSpacing ));
 
 		years = Object.keys(years).map(function(y){
 			var books = data.filter(function(d){
@@ -57,7 +58,7 @@
 
 			return {
 				year: y,
-				books: books, //TODO add cumulative pages + gaps per year 
+				books: shelfLayout( books, pageWidth, nomalSpacing), 
 				pageCount: d3.sum(books, function(b){ return b.pages; })
 			};
 		});
@@ -69,7 +70,6 @@
 			};
 		}, {books:0, pages:0});
 
-		
 		var width = (max.pages * pageWidth) + (max.books * nomalSpacing);
 
 		//DRAW THE STUFF
@@ -93,10 +93,58 @@
 				shelf.selectAll('g')
 					.data(function(d){ return d.books; })
 						.enter()
-					.append('g');
+					.append('g')
+						.call(function(g){
+							g.attr('transform',function(d){
+								return 'translate(' + d.x + ',0)'}
+							);
+
+							g.append('rect')
+								.attr({
+									x: 0,
+									y: function(d){
+										if(d.data.comic) return shelfHeight -(shelfHeight*0.9);
+										return shelfHeight - (shelfHeight*0.75);
+									},
+									width: function(d){ return d.width; },
+									height: function(d){
+										if(d.data.comic) return shelfHeight*0.9
+										return shelfHeight*0.75
+									},
+									fill: '#FFF'
+								});
+
+							g.append('text')
+								.attr({
+									transform:function(d){
+										return 'translate('+(d.width/2)+','+shelfHeight+') rotate(-90)'
+									},
+									dx:5,
+									dy:4
+								})
+								.text(function(d){
+									return d.data.title;
+								})
+						});
 			})
 
 	});
+
+function shelfLayout(s, thickness, spacing){
+	var acc = 0;
+
+	return s.map(function(d){
+		var o = {
+			data: d,
+			x: Math.floor(acc),
+			width: Math.max( Math.floor( d.pages*thickness ), spacing)
+		};
+
+		acc += (o.width + spacing);
+
+		return o;
+	});
+}
 
 function splitOn(array, keyFunction){
 	if(!keyFunction) keyFunction = function(d,i){ return i; };
