@@ -1,4 +1,8 @@
-tomgp.github.io
-===============
+##What it is
+new version of my homepage
 
-pages -- http://www.toffeemilkshake.co.uk
+aims:
+simple
+
+rules:
+image 300 x 300
