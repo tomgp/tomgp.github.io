@@ -6,19 +6,73 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Book shelf</title>
 	<style>
-		body{
+		body {
 			background-color: #000;
 			font-family: sans-serif;
+			color: #FFF;
+		}
+
+		.input {}
+
+		rect {
+			shape-rendering:crispEdges;
+		}
+
+		rect:hover {
+			stroke: #FFF;
+			stroke-width: 3;
+			stroke-dasharray: 5, 5;
+		}
+
+		.info {
+			position: fixed;
+			top: 0px;
+			right: 0px;
+			width: 25%;
+			background-color: rgba(0, 0, 0, 0.5);
 		}
 	</style>
 </head>
 <body>
+<div class="vis"></div>
+<div class="input">
+<div>Key</div>
+	Filter
+
+</div>
+<div class="info"></div>
 </body>
 <script>
 	'use strict';
-	var shelfHeight = 400;
-	var nomalSpacing = 20;
-	var pageWidth = 0.2;
+	var shelfHeight = 100;
+	var nomalSpacing = 4;
+	var pageWidth = 0.06;
+
+	var settings = {
+		highlight: 'age-of-book',//'rating', ////'age-of-book',  
+		search: null,
+	};
+
+
+	function colourBook(d){
+		//if highlighted by rating
+		var ratingScale = d3.scale.ordinal()
+			.domain(['++', '+', '', '-', '--'])
+			.range(['#0f0', '#ff0', '#fff', '#999', '#333'] );
+
+		var ageHighlight = d3.scale.threshold()
+		    .domain([1,10,25,100, 500, 3000])
+		    .range(['#fff','#bfd3e6','#9ebcda','#8c96c6','#88419d','#6e016b']);
+
+		if(settings.highlight == 'age-of-book'){
+			return ageHighlight( d.data.date.getFullYear() - Number(d.data.published) );
+		}else if(settings.highlight == 'rating'){
+			return ratingScale( d.data.rating );
+		}
+
+		return '#FFF';
+	}
+
 
 	d3.csv('/data/books.csv', function(data){
 		//SORT OUT THE DATA
@@ -46,8 +100,6 @@
 			return 'on the stack';
 		});
 
-		console.log(shelfLayout( years['2009'], pageWidth, nomalSpacing ));
-
 		years = Object.keys(years).map(function(y){
 			var books = data.filter(function(d){
 				if(d.date){
@@ -74,24 +126,32 @@
 
 		//DRAW THE STUFF
 
-		d3.select('body')
+		d3.select('.vis')
 			.append('svg')
 				.attr({
 					height: years.length * shelfHeight,
 					width: (max.pages * pageWidth) + (max.books * nomalSpacing)
 				})
 			.selectAll('g.shelf')
-				.data(years).enter()
+				.data(years
+						.reverse()
+						.filter(function(d){ 
+							return (d.year != 'on the stack')
+						})
+				)
+				.enter()
 			.append('g')
 				.attr({
 					class:'shelf',
 					transform:function(d,i){
-						return 'translate(0,' + (i * shelfHeight) + ')';
+						return 'translate(5,' + (i * shelfHeight) + ')';
 					}
 				})
 			.call(function(shelf){
-				shelf.selectAll('g')
-					.data(function(d){ return d.books; })
+				shelf.selectAll('g').attr('id',function(){
+						return 'shelf' + d.year;
+					})
+					.data(function(d){ return  d.books; })
 						.enter()
 					.append('g')
 						.call(function(g){
@@ -111,24 +171,30 @@
 										if(d.data.comic) return shelfHeight*0.9
 										return shelfHeight*0.75
 									},
-									fill: '#FFF'
+									fill: colourBook,
+								}).on('click',function(d){
+									showInfo( [d.data] );
 								});
-
-							g.append('text')
-								.attr({
-									transform:function(d){
-										return 'translate('+(d.width/2)+','+shelfHeight+') rotate(-90)'
-									},
-									dx:5,
-									dy:4
-								})
-								.text(function(d){
-									return d.data.title;
-								})
 						});
 			})
 
 	});
+
+function showInfo(data){
+	var join = d3.select('.info')
+		.selectAll('div')
+		.data(data)
+
+	join.enter().append('div')
+	join.exit().remove();
+	join.html(function(d){
+	console.log(d); 
+		return '<h2>'+d.title+'</h2>' +
+			'<p>by '+d.authors+' </p>';
+//		return JSON.stringify(d); 
+	});
+
+}
 
 function shelfLayout(s, thickness, spacing){
 	var acc = 0;
@@ -139,9 +205,7 @@ function shelfLayout(s, thickness, spacing){
 			x: Math.floor(acc),
 			width: Math.max( Math.floor( d.pages*thickness ), spacing)
 		};
-
 		acc += (o.width + spacing);
-
 		return o;
 	});
 }
