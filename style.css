@@ -95,7 +95,8 @@ blockquote {
 .item{
 	display: inline-block;
 	width:300px;
-	vertical-align: top;
+	vertical-align: bottom;
+	text-align: center;
 }
 
 figure {
