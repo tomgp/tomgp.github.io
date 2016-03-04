@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="/scripts/d3.v3.min.js"></script>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+	var sheetDateFormat = d3.time.format("%Y-%m-%d");
+	var pubDateFormat = d3.time.format("%Y");	
+
+	function shelveBy(array, f){
+		var shelves = [];
+		var acc = {};
+		var pageGap = 20; //space in pages between books;
+		
+		return array
+			.map(function(d){
+				var shelfString = f(d);
+				var shelfIndex = shelves.indexOf(shelfString);
+				if( shelfIndex === -1 ){
+					shelfIndex = shelves.length;
+					shelves.push(shelfString);
+				}
+				if(acc[shelfString] == undefined){ acc[shelfString] = 0; }
+				d.shelfPosition = acc[shelfString];
+				d.shelf = {
+					index: shelfIndex,
+					name: shelfString
+				}
+
+				acc[shelfString] += (pageGap + Number(d.pages));
+				return d;
+			});
+	}
+
+	function parseRow(d){
+		d.date = sheetDateFormat.parse( d.date );
+		d.pages = Number( d.pages )
+		d.published = pubDateFormat.parse( d.published );
+		return d;
+	}
+
+
+	d3.csv('/data/books.csv', function(data){
+		data = data.filter(function(d){ return (d.date != ''); }).map(parseRow);
+		var shelved = shelveBy( data, function(d){
+			return d.published;
+		});
+
+		console.table( shelved );
+	});
+
+</script>
+</html>

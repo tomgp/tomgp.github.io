@@ -113,6 +113,8 @@
 			return d;
 		});
 
+
+
 		var years = splitOn(data, function(d){
 			if(d.date){
 				return d.date.getFullYear();
@@ -224,6 +226,7 @@ function shelfLayout(s, thickness, spacing){
 		var o = {
 			data: d,
 			x: Math.floor(acc),
+			y: 
 			width: Math.max( Math.floor( d.pages*thickness ), spacing)
 		};
 		acc += (o.width + spacing);
