@@ -22,9 +22,11 @@
 			stroke: #FFF;
 			stroke-width: 3;
 			stroke-dasharray: 5, 5;
+			cursor: pointer;
 		}
 
 		.info {
+			pointer-events:none;
 			position: fixed;
 			top: 0px;
 			right: 0px;
@@ -37,7 +39,7 @@
 <div class="vis"></div>
 <div class="input">
 <div>Key</div>
-	Filter
+<div>Filter</div>
 
 </div>
 <div class="info"></div>
@@ -49,10 +51,22 @@
 	var pageWidth = 0.06;
 
 	var settings = {
-		highlight: 'age-of-book',//'rating', ////'age-of-book',  
-		search: null,
+		highlight: /*'author',*/ 'age-of-book',//'rating',  
+		search: null
 	};
 
+	function stringToColour(s){
+	    var hash = 0;
+	    for (var i = 0; i < s.length; i++) {
+	       hash = s.charCodeAt(i) + ((hash << 5) - hash);
+	    }
+
+		var c = (hash & 0x00FFFFFF)
+		        .toString(16)
+		        .toUpperCase();
+
+		return "#" + "00000".substring(0, 6 - c.length) + c;
+	}
 
 	function colourBook(d){
 		//if highlighted by rating
@@ -64,13 +78,19 @@
 		    .domain([1,10,25,100, 500, 3000])
 		    .range(['#fff','#bfd3e6','#9ebcda','#8c96c6','#88419d','#6e016b']);
 
-		if(settings.highlight == 'age-of-book'){
-			return ageHighlight( d.data.date.getFullYear() - Number(d.data.published) );
-		}else if(settings.highlight == 'rating'){
-			return ratingScale( d.data.rating );
+		switch(settings.highlight) {
+		    case 'age-of-book':
+		        return ageHighlight( d.data.date.getFullYear() - Number(d.data.published) );
+		        break;
+		    case 'rating':
+		        return ratingScale( d.data.rating );
+		        break;
+		    case 'author':
+		    	console.log(d.data.authors);
+		    	return stringToColour( d.data.authors );
+		    default:
+		        return '#FFF';
 		}
-
-		return '#FFF';
 	}
 
 
@@ -181,6 +201,7 @@
 	});
 
 function showInfo(data){
+	var displayDateFormat = d3.time.format("%e %b %Y");
 	var join = d3.select('.info')
 		.selectAll('div')
 		.data(data)
@@ -189,9 +210,9 @@ function showInfo(data){
 	join.exit().remove();
 	join.html(function(d){
 	console.log(d); 
-		return '<h2>'+d.title+'</h2>' +
-			'<p>by '+d.authors+' </p>';
-//		return JSON.stringify(d); 
+		return '<h2>' + d.title + ' (' + d.published + ')'+ '</h2>' +
+			'<p>by ' + d.authors + ' </p>' +
+			'<p>' + displayDateFormat(d.date) + '</p>'
 	});
 
 }
