@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<script src="/scripts/d3.v3.min.js"></script>
+	<script src="https://d3js.org/d3.v4.0.0-alpha.24.min.js"></script>
 	<title></title>
 </head>
 <body>
@@ -10,15 +10,26 @@
 </body>
 <script type="text/javascript">
 
-	var sheetDateFormat = d3.time.format("%Y-%m-%d");
-	var pubDateFormat = d3.time.format("%Y");	
+	var sheetDateFormat = d3.timeFormat("%Y-%m-%d");
+	var pubDateFormat = d3.timeFormat("%Y");
+	var sheetDateParse = d3.timeParse("%Y-%m-%d");
+	var pubDateParse = d3.timeParse("%Y");
 
-	function shelveBy(array, f){
+	var shelveBy = {
+		'yearRead':function(d){
+			return 'Read in ' + d.date.getFullYear();
+		},
+		'yearPublished':function(d){
+			return 'Published in ' + d.published;
+		}
+	}
+
+	function shelve(array, f){
 		var shelves = [];
 		var acc = {};
-		var pageGap = 20; //space in pages between books;
+		var pageGap = 60; //space in pages between books;
 		
-		return array
+		var books = array
 			.map(function(d){
 				var shelfString = f(d);
 				var shelfIndex = shelves.indexOf(shelfString);
@@ -36,24 +47,100 @@
 				acc[shelfString] += (pageGap + Number(d.pages));
 				return d;
 			});
+
+		return {
+			books:books,
+			shelves:shelves
+		};
 	}
 
 	function parseRow(d){
-		d.date = sheetDateFormat.parse( d.date );
+		d.date = sheetDateParse( d.date );
 		d.pages = Number( d.pages )
-		d.published = pubDateFormat.parse( d.published );
+		d.published = pubDateParse( d.published );
 		return d;
 	}
 
+	var height = 1000, 
+		width = 1000, 
+		margin = {top:10,left:10,bottom:10,right:10}
+		yRange = [0, height-(margin.bottom + margin.top)]
+		xRange = [0, width-(margin.left+margin.right)];
 
 	d3.csv('/data/books.csv', function(data){
 		data = data.filter(function(d){ return (d.date != ''); }).map(parseRow);
-		var shelved = shelveBy( data, function(d){
-			return d.published;
+		
+		var organised = shelve( data, shelveBy.yearRead ); //shelve by read year
+
+		var plot = d3.select('body')
+			.append('svg')
+				.attr('width', width)
+				.attr('height', height)
+			.append('g')
+				.attr('id','plot')
+				.attr('transform','translate('+margin.left+','+margin.top+')');
+
+		plot.append('g').attr('id','back');
+		plot.append('g').attr('id','books');
+		plot.append('g').attr('id','front');
+
+		drawShelves(organised);
+
+	});
+
+	function drawShelves(organised){
+
+		var pageMax = d3.max(organised.books, function(d){
+			return d.shelfPosition + d.pages;
 		});
 
-		console.table( shelved );
-	});
+		var shelfScale = d3.scaleLinear()
+			.range(yRange)
+			.domain([0, organised.shelves.length]);
+
+		var pageScale = d3.scaleLinear()
+			.range(xRange)
+			.domain([0, pageMax]);
+
+		var shelvesBack = d3.select('#back')
+			.selectAll('text.shelf-back')
+				.data(organised.shelves);
+			
+		shelvesBack.exit().remove();
+
+		shelvesBack.enter()
+				.append('text').attr('class','shelf-back')
+			.merge(shelvesBack)
+				.text(function(d){ return d; })
+				.attr('y',function(d,i){
+					return shelfScale(i);
+				})
+				.attr('dy',function(){ 
+					return shelfScale(1);
+				})
+
+		var books = d3.select('#books')
+			.selectAll('rect.book')
+				.data(organised.books);
+
+		books.exit().remove();
+
+		books.enter()
+				.append('rect').attr('class','book')
+			.merge(books)
+				.attr('x',function(d){
+					return pageScale(d.shelfPosition);
+				})
+				.attr('y',function(d){
+					return shelfScale(d.shelf.index) + shelfScale(1)/10;
+				})
+				.attr('width',function(d){
+					return pageScale(d.pages)
+				})
+				.attr('height',function(){
+					return shelfScale(9)/10
+				});
+	}
 
 </script>
 </html>
