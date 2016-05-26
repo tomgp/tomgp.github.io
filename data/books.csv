@@ -167,7 +167,7 @@ Building Stories,Chris Ware,,,2012-10-01,+,,246,,TRUE,2012
 Insurrection: The War Against the Judges Has Begun,Dan Abnett,,,2012-11-01,,,128,,TRUE,2011
 The A. B. C. Warriors: The Black Hole,"Pat Mills,Simon Bisley",,,2012-11-01,,,160,,TRUE,1988
 The Compass Rose,Ursula K. Le Guin,,,2013-01-01,,,368,,,1982
-The Iliad,"Homer, Robert Fagles",,,2013-01-01,,,528,,,-800
+The Iliad,"Homer,Robert Fagles",,,2013-01-01,,,528,,,-800
 Lustrum,Robert Harris,,,2013-01-01,,,454,,,2009
 Ubik,Philip K. Dick,,,2013-09-07,+,TRUE,224,,,1969
 Underground Maps Unraveled,Maxwell J Roberts,,,2013-02-01,+,,224,TRUE,,2012
@@ -186,7 +186,7 @@ Microscope,Ben Robbins,,,2012-08-01,,,,TRUE,,2011
 The Complete Chronicles of Conan: Centenary Edition,Robert E. Howard,,,,,,928,,,1932
 "MP3: The Meaning of a Format (Sign, Storage, Transmission) ",Jonathan Sterne,,,2013-06-14,,,360,TRUE,,2012
 Epiphany of The Long Sun,Gene Wolfe,,,,,,720,,,2000
-The Odyssey,"Homer, Robert Fagles",,,2014-02-03,,,560,,,-800
+The Odyssey,"Homer,Robert Fagles",,,2014-02-03,,,560,,,-800
 Telegraph Avenue,Michael Chabon,,,2013-08-11,,,640,,,2012
 Fables Vol 12: The Dark Ages,"Peter Gross,Mark Buckingham,David Hahn,Mike Allred,Bill Willingham",,,2013-06-03,,,192,,TRUE,2009
 Fables Vol 13: The Great Fables Crossover,"Bill Willingham,Matthew Sturges,Mark Buckingham",,,2013-06-05,,,224,,TRUE,2010
@@ -233,8 +233,8 @@ Making Comics,Scott McCloud,,,2014-08-08,,,272,TRUE,TRUE,2006
 Memorial,Alice Oswald,,,2014-08-09,+,,96,,,2011
 84 Charing Cross Road,Helene Hanff,,,2014-08-13,,,240,TRUE,,1970
 Three,"Kieron Gillen,Ryan Kelly,Jordie Bellaire",,,2014-08-14,,,146,,TRUE,2014
-Nemo Heart of Ice,"Alan Moore, Kevin O'Neil",,,2014-08-15,,,56,,TRUE,2013
-Nemo Roses of Berlin,"Alan Moore, Kevin O'Neil",,,2014-08-16,,,56,,TRUE,2014
+Nemo Heart of Ice,"Alan Moore,Kevin O'Neil",,,2014-08-15,,,56,,TRUE,2013
+Nemo Roses of Berlin,"Alan Moore,Kevin O'Neil",,,2014-08-16,,,56,,TRUE,2014
 The Diary of Adrian Mole aged 13 3/4,Sue Townsend,,,2014-08-24,+,,272,,,1982
 Ammonite,Nicola Griffith,,,2014-09-18,,,416,,,1992
 Augustus,John Williams,,,2014-11-10,,,352,,,1972
@@ -245,13 +245,13 @@ The Lifecycle of Software Objects,Ted Chiang,,,2015-01-18,,,150,,,2010
 The Thing Around Your Neck,Chimamanda Ngozi Adichie,,,2015-01-23,+,,300,,,2009
 In Other Worlds: SF and the Human Imagination,Margaret Atwood,,,2015-02-04,,,272,TRUE,,2011
 Flame Alphabet,Ben Marcus,,,2015-02-14,,,304,,,2012
-Saga,"Fiona Staples, Brian K. Vaughan",,,2015-02-20,,,504,,TRUE,2014
+Saga,"Fiona Staples,Brian K. Vaughan",,,2015-02-20,,,504,,TRUE,2014
 Sugar Skull,Charles Burns,,,2015-02-21,,,80,,TRUE,2014
 The Love Affairs Of Nathaniel P,Adelle Waldman,,,2015-03-05,+,,272,,,2014
 Get In Trouble,Kelly Link,,,2015-04-08,+,,352,,,2015
 Knowledge: A Very Short Introduction,Jennifer Nagel,,,2015-04-09,,,152,TRUE,,2014
 Design as Art,Bruno Munari,,,2015-04-10,,,224,TRUE,,1971
-Monsterous Affections,Various,"Kelly Link, Gavin Grant",,2015-04-30,,,480,,,2014
+Monsterous Affections,Various,"Kelly Link,Gavin Grant",,2015-04-30,,,480,,,2014
 Infinite Jest,David Foster Wallace,,,2015-08-15,++,,1104,,,1996
 Ancillary Justice,Ann Leckie,,,2015-08-25,,,432,,,2013
 Ancillary Sword,Ann Leckie,,,2015-09-03,,,384,,,2014
@@ -283,8 +283,8 @@ Jailbird,Kurt Vonnegut,+,,2016-04-09,,TRUE,214,,,1979
 Deadeye Dick,Kurt Vonnegut,,,2016-04-15,,TRUE,182,,,1982
 Galapagos,Kurt Vonnegut,,,2016-04-23,TRUE,+,222,,,1985
 To The Lighthouse,Virginia Woolf,,,2016-05-12,+,,238,,,1927
-Captain Marvel: In Pursuit of Flight,"Kelly Sue DeConnick, Emma Rios, Dexter Soy",,,2016-05-10,,,136,,TRUE,2012
+Captain Marvel: In Pursuit of Flight,"Kelly Sue DeConnick,Emma Rios,Dexter Soy",,,2016-05-10,,,136,,TRUE,2012
 Captain Marvel: Down,"Kelly Sue DeConnick",,,2016-05-11,,,136,,TRUE,2012
-Thor: Goddess of Thunder,authors,editors,translator,2016-05-13,rating,re-read,pages,non-fiction,TRUE,published
-Our Tragic Universe,Scarlett Thomas,editors,translator,date,rating,re-read,pages,non-fiction,comic,published
-title,authors,editors,translator,date,rating,re-read,pages,non-fiction,comic,published
+Thor: Goddess of Thunder,"Aaron Jason,Dauterman Russell",,,2016-05-13,,,136,,TRUE,2016
+Our Tragic Universe,Scarlett Thomas,,,2016-05-22,-,,448,,,2011
+Bluebeard,Kurt Vonnegut,,,date,rating,TRUE,216,,,1987
