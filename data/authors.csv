@@ -1,7 +1,7 @@
 name,born,died,books
 Ursula K. Le Guin,,,"0,1,16,17,21,23,31,110,167,210,213,214,223"
 Susanna Clarke,,,2
-,,,"3,4,34,141,144,145"
+Various,,,"3,4,34,141,144,145,252"
 Banana Yoshimoto,,,5
 Paul Auster,,,6
 Winsor McCay,,,7
@@ -80,12 +80,12 @@ Shaky Kane,,,101
 Glen Duncan,,,103
 Simon Reynolds,,,"106,137"
 Philip K. Dick,,,"107,136,170"
-Tetsu Kariya,,,108
+Tetsu Kariya,,,"108,220"
 Tricia Sullivan,,,109
 Gene Wolfe,,,"111,114,163,186,214"
 Brian K. Vaughan,,,"112,246"
 Peter Hogan,,,115
- Chris Sprouse,,,115
+Chris Sprouse,,,115
 Stella Gibbons,,,"117,268"
 Simon Rich,,,118
 Jennifer Egan,,,120
@@ -157,7 +157,6 @@ Madeline Miller,,,216
 Margaret Atwood,,,"217,244"
 Meg Rosoff,,,218
 Virginia Woolf,,,"219,283"
- Tetsu Kariya,,,220
 Akira Hanasaki,,,220
 George Eliot,,,221
 Rosemary Sutcliffe,,,222
@@ -182,7 +181,6 @@ Fiona Staples,,,246
 Adelle Waldman,,,248
 Jennifer Nagel,,,250
 Bruno Munari,,,251
-Various,,,252
 Ann Leckie,,,"254,255,267"
 Herman Melville,,,257
 Junji Ito,,,"258,269"
