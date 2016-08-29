@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1000 1200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="Layer2" transform="matrix(1,0,0,1,196.5,137.5)">
+        <clipPath id="_clip1">
+            <rect x="-196.5" y="-99.517" width="1000" height="151.479"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(1,-0,-0,1,-196.5,-137.5)">
+                <use xlink:href="#_Image2" x="0" y="37.983" width="984.852px" height="106.036px"/>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(2.45707,0,0,2.45707,55.6347,261.978)">
+        <g transform="matrix(1,0,0,1,0,-1.22096)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.913" style="fill:white;"/>
+            <circle cx="0" cy="0" r="2.088" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,45.1111,-1.22096)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.023" style="fill:white;"/>
+            <circle cx="0" cy="0" r="2.952" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,90.2222,-1.22096)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.131" style="fill:white;"/>
+            <circle cx="0" cy="0" r="3.616" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,135.333,-1.22096)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.239" style="fill:white;"/>
+            <circle cx="0" cy="0" r="4.175" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,180.444,-1.22096)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.346" style="fill:white;"/>
+            <circle cx="0" cy="0" r="4.668" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,225.556,-1.22096)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.453" style="fill:white;"/>
+            <circle cx="0" cy="0" r="5.113" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,270.667,-1.22096)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.56" style="fill:white;"/>
+            <circle cx="0" cy="0" r="5.523" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,315.778,-1.22096)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.665" style="fill:white;"/>
+            <circle cx="0" cy="0" r="5.904" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,360.889,-1.22096)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.77" style="fill:white;"/>
+            <circle cx="0" cy="0" r="6.263" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,43.8901)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.903" style="fill:white;"/>
+            <circle cx="0" cy="0" r="2.952" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,45.1111,43.8901)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.132" style="fill:white;"/>
+            <circle cx="0" cy="0" r="4.175" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,90.2222,43.8901)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.359" style="fill:white;"/>
+            <circle cx="0" cy="0" r="5.113" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,135.333,43.8901)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.582" style="fill:white;"/>
+            <circle cx="0" cy="0" r="5.904" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,180.444,43.8901)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.804" style="fill:white;"/>
+            <circle cx="0" cy="0" r="6.601" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,225.556,43.8901)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.023" style="fill:white;"/>
+            <circle cx="0" cy="0" r="7.231" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,270.667,43.8901)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.239" style="fill:white;"/>
+            <circle cx="0" cy="0" r="7.811" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,315.778,43.8901)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.453" style="fill:white;"/>
+            <circle cx="0" cy="0" r="8.35" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,360.889,43.8901)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.665" style="fill:white;"/>
+            <circle cx="0" cy="0" r="8.857" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,89.0013)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="17.836" style="fill:white;"/>
+            <circle cx="0" cy="0" r="3.616" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,45.1111,89.0013)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.198" style="fill:white;"/>
+            <circle cx="0" cy="0" r="5.113" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,90.2222,89.0013)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.554" style="fill:white;"/>
+            <circle cx="0" cy="0" r="6.263" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,135.333,89.0013)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.903" style="fill:white;"/>
+            <circle cx="0" cy="0" r="7.231" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,180.444,89.0013)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.246" style="fill:white;"/>
+            <circle cx="0" cy="0" r="8.085" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,225.556,89.0013)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.582" style="fill:white;"/>
+            <circle cx="0" cy="0" r="8.857" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,270.667,89.0013)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.913" style="fill:white;"/>
+            <circle cx="0" cy="0" r="9.566" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,315.778,89.0013)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.239" style="fill:white;"/>
+            <circle cx="0" cy="0" r="10.227" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,360.889,89.0013)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.56" style="fill:white;"/>
+            <circle cx="0" cy="0" r="10.847" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,134.112)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="16.7" style="fill:white;"/>
+            <circle cx="0" cy="0" r="4.175" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,45.1111,134.112)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="17.214" style="fill:white;"/>
+            <circle cx="0" cy="0" r="5.904" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,90.2222,134.112)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="17.713" style="fill:white;"/>
+            <circle cx="0" cy="0" r="7.231" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,135.333,134.112)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.198" style="fill:white;"/>
+            <circle cx="0" cy="0" r="8.35" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,180.444,134.112)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.671" style="fill:white;"/>
+            <circle cx="0" cy="0" r="9.336" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,225.556,134.112)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.132" style="fill:white;"/>
+            <circle cx="0" cy="0" r="10.227" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,270.667,134.112)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.582" style="fill:white;"/>
+            <circle cx="0" cy="0" r="11.046" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,315.778,134.112)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.023" style="fill:white;"/>
+            <circle cx="0" cy="0" r="11.809" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,360.889,134.112)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.453" style="fill:white;"/>
+            <circle cx="0" cy="0" r="12.525" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,179.223)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="15.481" style="fill:white;"/>
+            <circle cx="0" cy="0" r="4.668" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,45.1111,179.223)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="16.17" style="fill:white;"/>
+            <circle cx="0" cy="0" r="6.601" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,90.2222,179.223)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="16.83" style="fill:white;"/>
+            <circle cx="0" cy="0" r="8.085" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,135.333,179.223)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="17.465" style="fill:white;"/>
+            <circle cx="0" cy="0" r="9.336" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,180.444,179.223)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.078" style="fill:white;"/>
+            <circle cx="0" cy="0" r="10.438" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,225.556,179.223)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.671" style="fill:white;"/>
+            <circle cx="0" cy="0" r="11.434" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,270.667,179.223)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.246" style="fill:white;"/>
+            <circle cx="0" cy="0" r="12.35" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,315.778,179.223)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.804" style="fill:white;"/>
+            <circle cx="0" cy="0" r="13.203" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,360.889,179.223)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.346" style="fill:white;"/>
+            <circle cx="0" cy="0" r="14.003" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,224.335)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="14.158" style="fill:white;"/>
+            <circle cx="0" cy="0" r="5.113" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,45.1111,224.335)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="15.053" style="fill:white;"/>
+            <circle cx="0" cy="0" r="7.231" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,90.2222,224.335)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="15.898" style="fill:white;"/>
+            <circle cx="0" cy="0" r="8.857" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,135.333,224.335)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="16.7" style="fill:white;"/>
+            <circle cx="0" cy="0" r="10.227" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,180.444,224.335)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="17.465" style="fill:white;"/>
+            <circle cx="0" cy="0" r="11.434" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,225.556,224.335)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.198" style="fill:white;"/>
+            <circle cx="0" cy="0" r="12.525" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,270.667,224.335)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.903" style="fill:white;"/>
+            <circle cx="0" cy="0" r="13.529" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,315.778,224.335)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.582" style="fill:white;"/>
+            <circle cx="0" cy="0" r="14.463" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,360.889,224.335)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.239" style="fill:white;"/>
+            <circle cx="0" cy="0" r="15.34" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,269.446)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="12.698" style="fill:white;"/>
+            <circle cx="0" cy="0" r="5.523" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,45.1111,269.446)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="13.847" style="fill:white;"/>
+            <circle cx="0" cy="0" r="7.811" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,90.2222,269.446)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="14.908" style="fill:white;"/>
+            <circle cx="0" cy="0" r="9.566" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,135.333,269.446)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="15.898" style="fill:white;"/>
+            <circle cx="0" cy="0" r="11.046" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,180.444,269.446)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="16.83" style="fill:white;"/>
+            <circle cx="0" cy="0" r="12.35" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,225.556,269.446)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="17.713" style="fill:white;"/>
+            <circle cx="0" cy="0" r="13.529" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,270.667,269.446)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.554" style="fill:white;"/>
+            <circle cx="0" cy="0" r="14.613" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,315.778,269.446)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.359" style="fill:white;"/>
+            <circle cx="0" cy="0" r="15.621" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,360.889,269.446)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.131" style="fill:white;"/>
+            <circle cx="0" cy="0" r="16.569" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,314.557)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="11.046" style="fill:white;"/>
+            <circle cx="0" cy="0" r="5.904" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,45.1111,314.557)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="12.525" style="fill:white;"/>
+            <circle cx="0" cy="0" r="8.35" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,90.2222,314.557)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="13.847" style="fill:white;"/>
+            <circle cx="0" cy="0" r="10.227" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,135.333,314.557)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="15.053" style="fill:white;"/>
+            <circle cx="0" cy="0" r="11.809" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,180.444,314.557)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="16.17" style="fill:white;"/>
+            <circle cx="0" cy="0" r="13.203" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,225.556,314.557)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="17.214" style="fill:white;"/>
+            <circle cx="0" cy="0" r="14.463" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,270.667,314.557)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.198" style="fill:white;"/>
+            <circle cx="0" cy="0" r="15.621" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,315.778,314.557)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.132" style="fill:white;"/>
+            <circle cx="0" cy="0" r="16.7" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,360.889,314.557)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="20.023" style="fill:white;"/>
+            <circle cx="0" cy="0" r="17.713" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,359.668)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="9.099" style="fill:white;"/>
+            <circle cx="0" cy="0" r="6.263" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,45.1111,359.668)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="11.046" style="fill:white;"/>
+            <circle cx="0" cy="0" r="8.857" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,90.2222,359.668)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="12.698" style="fill:white;"/>
+            <circle cx="0" cy="0" r="10.847" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,135.333,359.668)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="14.158" style="fill:white;"/>
+            <circle cx="0" cy="0" r="12.525" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,180.444,359.668)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="15.481" style="fill:white;"/>
+            <circle cx="0" cy="0" r="14.003" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,225.556,359.668)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="16.7" style="fill:white;"/>
+            <circle cx="0" cy="0" r="15.34" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,270.667,359.668)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="17.836" style="fill:white;"/>
+            <circle cx="0" cy="0" r="16.569" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,315.778,359.668)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="18.903" style="fill:white;"/>
+            <circle cx="0" cy="0" r="17.713" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,360.889,359.668)">
+            <circle cx="0" cy="0" r="20.875" style="fill:black;"/>
+            <circle cx="0" cy="0" r="19.913" style="fill:white;"/>
+            <circle cx="0" cy="0" r="18.788" style="fill:black;"/>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image2" width="985px" height="107px" xlink:href="data:image/png;base64,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"/>
+    </defs>
+</svg>
