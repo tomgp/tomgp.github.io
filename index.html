@@ -24,7 +24,7 @@
 
 		.item p{
 			position: absolute;
-			font-size: 40px;
+			font-size: 2rem;
 			bottom: 0px;
 		}
 
@@ -39,21 +39,19 @@
 			background-color: #00F;
 		}
 
-		.readable{
-			max-width: 600px;
+		#about, h1, h2, .pagenav{
+			font-size: 2rem;
+			line-height: 2.5rem;
 		}
 	</style>
 </head>
 <body>
-<article>
+<article id="home">
     <h1>Tom Pearson</h1>
-
+    <h2>Maps, charts &amp; visual explanations</h2>
+    <a class="pagenav" href="#about">about</a>
+    <hr>
     <section>
-    	<h2>Maps, charts &amp; visual explanations</h2>
-    	<p class="readable">I make graphics for the <a href="http://www.ft.com">Financial Times</a>. Before this I did the same for the <a href="http://news.bbc.co.uk">BBC News website</a>. Before that I made gallery information systems for the <a href="http://www.nhm.ac.uk">Natural History Museum</a>.</p>
-    </section>
-    <section>
-    <p>Here are some examples of things I've made</p>
     		<div class="item">
 		<p><a href="http://elections.ft.com/uk/2015/results">UK general election results</a></p>
 		<img src="pictures/results-sankey-white.png"></div>
@@ -115,13 +113,10 @@
 
 		<div class="item"><p><a href="http://www.bbc.co.uk/news/world-asia-pacific-12748215">Japan quake timeline</a></p><img src="pictures/earthquake-map.png"></div>
 	</section>
-	<section>
-	<hr>
-	<ul>
-		<li><a href="http://www.twitter.com/tomp">Twitter</a></li>
-		<li><a href="http://www.github.com/tomgp">Github</a></li>
-		<li><a href="http://bl.ocks.org/tomgp">Blocks</a></li>
-		<li><a href="http://blog.toffeemilkshake.co.uk">Tumblr</a></li>
+		<hr>
+	<section id="about">
+    	<p class="readable">I make graphics for the <a href="http://www.ft.com">Financial Times</a>. Before this I did the same for the <a href="http://news.bbc.co.uk">BBC News website</a>. Before that I made gallery information systems for the <a href="http://www.nhm.ac.uk">Natural History Museum</a>.</p>
+	<p class="linkblock"><a href="http://www.twitter.com/tomp">Twitter</a> <a href="http://www.github.com/tomgp">Github</a> <a href="http://bl.ocks.org/tomgp">Blocks</a> <a href="http://blog.toffeemilkshake.co.uk">Tumblr</a> <a href="#home">Home</a></p>
 	</ul>
 	</section>
   </article>
