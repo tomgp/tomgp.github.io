@@ -8,9 +8,37 @@
 		*{
 			font-family: sans-serif;
 		}
+
+		a{
+			color: #00F;
+		}
+
+		a:visited{
+			color:#A0A;
+		}
+
 		.item{
 			display: inline-block;
+			position: relative;
 		}
+
+		.item p{
+			position: absolute;
+			font-size: 40px;
+			bottom: 0px;
+		}
+
+		.item a{
+			text-decoration:none;
+			background-color: #FFF;	
+		}
+
+		.item a:hover{
+			text-decoration:none;
+			color: #FFF;
+			background-color: #00F;
+		}
+
 		.readable{
 			max-width: 600px;
 		}
