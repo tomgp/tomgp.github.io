@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<script src="https://d3js.org/d3.v4.0.0-alpha.24.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<title></title>
 </head>
 <body>
@@ -38,12 +38,14 @@
 					shelves.push(shelfString);
 				}
 				if(acc[shelfString] == undefined){ acc[shelfString] = 0; }
+				console.log(shelfString,acc[shelfString]);
 				d.shelfPosition = acc[shelfString];
+				console.log(d.shelfPosition);
 				d.shelf = {
 					index: shelfIndex,
 					name: shelfString
 				}
-
+				console.log('pages',d.pages);
 				acc[shelfString] += (pageGap + Number(d.pages));
 				return d;
 			});
@@ -129,6 +131,7 @@
 				.append('rect').attr('class','book')
 			.merge(books)
 				.attr('x',function(d){
+					console.log(d);
 					return pageScale(d.shelfPosition);
 				})
 				.attr('y',function(d){
