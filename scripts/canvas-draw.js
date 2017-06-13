@@ -1,6 +1,7 @@
 if(document.querySelector){
 (function(){
-    var context, drawing = false;
+    var context;
+    var drawing = false;
 
     function addCanvas(){
         var canvas = document.createElement('canvas');
@@ -32,23 +33,45 @@ if(document.querySelector){
         face.height = '250';
         face.src = 'face.svg';
 
+    function startDraw(e){
+      e.preventDefault();
+      var coords = normaliseEvent(e);
+      context.beginPath(coords.x, coords.y);
+      drawing = true;
+    }
+
+    function endDraw(e){
+      e.preventDefault();
+      drawing = false;
+    }
+
+    function draw(e) {
+      e.preventDefault();
+      var coords = normaliseEvent(e);
+      if(drawing){
+          context.lineTo(coords.x, coords.y);
+          context.stroke();
+      }
+    }
+
+    function normaliseEvent(e){
+      var x = e.clientX;
+      var y = e.clientY;
+      if(e.touches){
+        x = e.touches[0].clientX;
+        y = e.touches[0].clientY;
+      }
+      return {x:x, y:y};
+    }
+
     document.querySelector('article').appendChild(face);
 
-    document.addEventListener('mousedown',function(e){
-        context.beginPath(e.clientX, e.clientY);
-        drawing = true;
-    }, false)
-
-    document.addEventListener('mouseup',function(e){
-        drawing = false;
-    }, false);
-
-    document.addEventListener('mousemove', function(e) {
-        if(drawing){
-            context.lineTo(e.clientX, e.clientY);
-            context.stroke();
-        }
-    }, false);
+    document.addEventListener('mousedown', startDraw, false);
+    document.addEventListener('touchstart', startDraw, false);
+    document.addEventListener('mouseup', endDraw, false);
+    document.addEventListener('touchend', endDraw, false);
+    document.addEventListener('mousemove', draw, false);
+    document.addEventListener('touchmove', draw, false);
 
     window.addEventListener('resize',function(){
         var c = document.querySelector('canvas').remove();
