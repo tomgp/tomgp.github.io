@@ -6,3 +6,4 @@ data/books-crappy.csv
 data/fix.js
 
 npm-debug.log
+data/.DS_Store
