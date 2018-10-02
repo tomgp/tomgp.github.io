@@ -7,15 +7,16 @@ dsv.csvParse(data)
     .forEach((book, i)=>{
         try{
             fs.writeFileSync(
-                `./comments/${i}-${speakingurl(book.title)}-${speakingurl(book.authors)}.yml`,
+                `./comments/${book.date}-${i}-${speakingurl(book.title)}-${speakingurl(book.authors)}.md`,
                 `---
 title: ${book.title}
 author: ${book.authors}
-reading date: ${book.date}
+readingDate: ${book.date}
+layout: book
 ---`,
                 {flag:'wx'}
             )
         }catch(err){
-            console.log(`skipping ${i}-${speakingurl(book.title)}-${speakingurl(book.authors)}.yml`)
+            console.log(`skipping ${book.date}-${i}-${speakingurl(book.title)}-${speakingurl(book.authors)}.md`)
         }
     });
