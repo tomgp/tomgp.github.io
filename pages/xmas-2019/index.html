@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Happy Xmas!</title></head>
+<style>
+body{
+
+}
+pre{
+    color:rgb(40,100,0);
+}
+</style>
+<body>
+<pre class="scene">
+╭──────────────────────────────────────────────────────────────╮
+│ ◎ ○ ○ ░░░░░░░░░░░░░░░░░░░HAPPY XMAS!░░░░░░░░░░░░░░░░░░░░░░░░░│
+├──────────────────────────────────────────────────────────────┤
+│██████████████████████████████████████████████████████████████│
+│██████████████████████████████████████████████████████████████│
+│██████████████████████████████████████████████████████████████│
+│██████████████████████████████████████████████████████████████│
+│▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓│
+│▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓│
+│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+│▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦◤ ◥▦▦▦▦▦▦▦▦▦▦▦▦▦│
+│▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦◤    △   ◥▦▦▦▦▦▦▦▦▦▦▦│
+│▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦△▦▦△ △ ◥▦▦▦▦▦▦▦▦◤  △ △      ◥▦▦◤ ◥▦▦▦▦▦│
+│◤◥▤▤▤▤▤▤▤▤▤▤▤▤▤▤▤▤▤▤△▤◤    △▵▴△▵◥▤▤▤▤◤   △          ▤◤    ◥▤▤▤│
+│   ◥▬▬╱╲▬▬▬▬▬▬▬▬▬▬▵▵      ▵    △▵ ◥◤                         ◥│
+│    ◥╱  ╲  ◥█▭▭◤         ▴       ▵           ▵                │
+│    ╱ □□ ╲       ▵△               ▵      ▴      ▵             │
+│   ╱      ╲     ▵                      △▴╱╲▴△ ▵  △▵ ▴         │
+│  ╱ □□□□□□ ╲                         ▴△▵╱  ╲ △╱╲ ▵△▵△▴ ▴      │
+│ ╱          ╲                      ▴▵    ││  ╱  ╲   ▵△▵△△▴    │
+│  ║□□□□□□□□║                      ▵         ╱    ╲▴    ▵ ▴▴   │
+│  ║   ▯▯   ║                                  ││        ▵     │
+└──────────────────────────────────────────────────────────────┘
+</pre>
+</body>
+<script>
+//get the contents of the pre tag
+const border={
+    top:3,
+    bottom:1,
+    left:1,
+    right:1,
+};
+
+const flakeMax = 40;
+
+//turn it into a 2d array
+const scene = document.querySelector('.scene').innerText
+    .split(/\n/)
+    .map(row=>row.split(''));
+
+const sceneDim = [scene[0].length - (border.left+border.right), scene.length - (border.top+border.bottom)];
+//make an array for snowflakes
+const snow = [];
+const animationTime = 500;
+
+function randomRow(width=50, flakeProb=0.1){
+    const row = [];
+    for(let i=0; i<width; i++){
+        row[i] = (Math.random() < flakeProb);
+    }
+    return row;
+}
+
+function update(background, fallingItems, margin, dim){
+    //push add new row
+    const newBackground = JSON.parse(JSON.stringify(background));
+    const symbol = '*';
+    const newRow = randomRow(dim[0]);
+    fallingItems.unshift(newRow);
+    if(fallingItems.length>dim[1]){
+        fallingItems.pop();
+    }
+
+    for(let y = 0; y++; y < dim[1]){
+        for(let x = 0; x++; x < dim[0]){
+            if(fallingItems[y][x]){
+                newBackground[y+margin.top ][x+margin.left] = symbol;
+            }
+        }
+    }
+    return newBackground;
+}
+
+function write(sceneData){
+    console.log(sceneData);
+    document.querySelector('pre').innerText = sceneData.map(d=>d.join('')).join('\n');
+}
+write(update(scene, snow, border, sceneDim));
+//
+</script>
+</html>
