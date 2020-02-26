@@ -19,10 +19,10 @@
 		}
 
 		a{
-			color: #ff2800;
+			font-weight:bold;
 		}
 		a:visited{
-			color: #ff2800;
+			color: #0028ff;
 		}
 		a:hover{
 			background-color: #ff2800;
@@ -34,6 +34,15 @@
 		}
 		p.readable{
 			line-height: 1.5rem;
+		}
+		div p{
+		margin-top:0px;
+		margin-left:10px;
+		}
+		.promo{
+			display:grid;
+			grid-template-columns: 1fr 4fr;
+			max-width: 750px;
 		}
 		h3{ display: inline-block; margin:0; font-weight: normal; font-size: inherit;}
 		hr{
@@ -75,31 +84,51 @@
 <body>
 <article class="intro">
     <h1>I'm Tom Pearson</h1>
-    <h2>and this is my personal website</h2>
-	<section id="about">
+	<p>
+		This is my personal website.
+	</p>
+</article>
+<article id="contents">
+<h2>Contents</h2>
+	<section class="promo">
+	<img src="/pictures/home-page/escape.svg" width="150" height="150">
+		<div><p><a href="https://www.toffeemilkshake.co.uk/escape-maps/">Escape From The Aliens in Outer Space map creator</a></p> 
+		<p>A tool allowing players of the awkwardly named tabletop game to make their own maps or edit those that the designers have provided.</p>
+		</div>
+	</section>
+	<section class="promo">
+		<img src="/pictures/home-page/shelf.svg" width="150" height="150">
+		<div>
+			<p><a href="https://www.toffeemilkshake.co.uk/books/">Books I've read</a></p>
+			<p>A straightforward list of all the books I've read (not including things I've read to my kids). Mostly novels.<p>
+		</div>
+	</section>
+	<section class="promo">
+		<img src="/pictures/home-page/words.png" width="150" height="150">
+		<div>
+		<p><a href="https://www.toffeemilkshake.co.uk/words/">Words</a></p>
+		<p>My latest blog. Mainly what I thought about books I've read, some mudane daily life stuff and I've started posting some links to interesting internet stuff I've read on Fridays.</p>
+		<p>I have been blogging for nearly 20 years but most of that effort has been consigned to the <a href="https://web.archive.org/web/20040522033341/http://sunnyblue.net/">wayback machine</a>, it's for the best.</p>
+		</div>
+	</section>
+</article>
+<article id="about">
+	<h2>A bit about me</h2>
+	<section class="promo">
+	<div></div>
+	<div>
 		<p class="readable">
-			I'm a developer based in London with over 20 years commercial experience.
+			I'm a software developer based in London with over 20 years experience.
 			I specialize in working with and visualising data.
-			I value  simplicity, clarity, and accesibility.
+			I value simplicity, clarity, and accesibility.
 		</p>
-    	<p class="readable">I've designed and developed software for
-    		After the flood, Condé Nast International, The Financial Times, BBC News, The Natural History Museum, as well as several smaller engagements.
+		<p class="readable">I've designed and developed software for
+			After the flood, Condé Nast International, The Financial Times, BBC News, The Natural History Museum, as well as several smaller engagements.
 		</p> 
 		<p  class="readable">
 			You can email me (<b>tom<span style="display: none">null</span>.g.<span style="display: none">null</span>pearson<span style="display: none">+spam+</span>@gmail.com</b>), follow me on twitter (<b s>@tomp</b>) or github (<b>tomgp</b>).
 		</p>
-	</section>
-</article>
-<article id="contents">
-	<section class="promo">
-	Puzzle poker
-	</section>
-	<section class="promo">
-	Escape from the aliens in outerspace - map editor
-	</section>
-	<section class="promo">
-	</section>
-	<section class="promo">
+	</div>
 	</section>
 </article>
 </body>
