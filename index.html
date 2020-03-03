@@ -14,6 +14,9 @@
 			font-family: sans-serif;
 			color: #0028ff;
 		}
+		pre{
+			font-family:monospace;
+		}
 		#home{
 			margin: 2rem;
 		}
@@ -31,10 +34,9 @@
 
 		p{
 			max-width: 600px;
-		}
-		p.readable{
 			line-height: 1.5rem;
 		}
+
 		div p{
 		margin-top:0px;
 		margin-left:10px;
@@ -82,13 +84,14 @@
 	</style>
 </head>
 <body>
-<article class="intro">
+<article>
     <h1>I'm Tom Pearson</h1>
+<section class="intro">
 	<p>
 		This is my personal website.
 	</p>
-</article>
-<article id="contents">
+</section>
+<section id="contents">
 <h2>Contents</h2>
 	<section class="promo">
 	<img src="/pictures/home-page/escape.svg" width="150" height="150">
@@ -100,19 +103,43 @@
 		<img src="/pictures/home-page/shelf.svg" width="150" height="150">
 		<div>
 			<p><a href="https://www.toffeemilkshake.co.uk/books/">Books I've read</a></p>
-			<p>A straightforward list of all the books I've read (not including things I've read to my kids). Mostly novels.<p>
+			<p>A list of all the books I've read (not including things I've read to my kids) over the last 10 years or so. Mostly novels.<p>
 		</div>
 	</section>
 	<section class="promo">
 		<img src="/pictures/home-page/words.png" width="150" height="150">
 		<div>
 		<p><a href="https://www.toffeemilkshake.co.uk/words/">Words</a></p>
-		<p>My latest blog. Mainly what I thought about books I've read, some mudane daily life stuff and I've started posting some links to interesting internet stuff I've read on Fridays.</p>
-		<p>I have been blogging for nearly 20 years but most of that effort has been consigned to the <a href="https://web.archive.org/web/20040522033341/http://sunnyblue.net/">wayback machine</a>, it's for the best.</p>
+		<p>My latest blog. Mainly what I thought about books I've read, some mudane daily life stuff and I've started posting some links to interesting internet stuff I've read on Friday(ish).</p>
 		</div>
 	</section>
-</article>
-<article id="about">
+		<section class="promo">
+		<img src="/pictures/home-page/puzzle-poker.svg" width="150" height="150">
+		<div>
+		<p><a href="https://www.toffeemilkshake.co.uk/puzzle-poker/">Puzzle Poker</a></p>
+		<p>A simple game.</p><p>Make poker hands to score points and clear space to make more posker hands.</p>
+		</div>
+	</section>
+		</section>
+		<section class="promo">
+		<img src="/pictures/home-page/line-simplification.svg" width="150" height="150">
+		<div>
+		<p><a href="https://www.toffeemilkshake.co.uk/simplify-line/">Line Simplification</a></p>
+		<p>Simplify the path of a line without losing its key features.</p>
+		<p>Originally written as a drop in replacement for D3 v3's path generator (d3.svg.line), should still work with newer versions.</p>
+		</div>
+	</section>
+		</section>
+		</section>
+		<section class="promo">
+		<img src="/pictures/home-page/icon-array.svg" width="150" height="150">
+		<div>
+		<p><a href="https://www.toffeemilkshake.co.uk/d3-iconarray/">Icon array</a></p>
+		<p>A d3 module to help you make legible icon grids out of data, includes the ability to regular breaks to grids to improve legibility and to set the draw order to allow effective use in either horizontal or vertical orientation.</p>
+		</div>
+	</section>
+</section>
+<section id="about">
 	<h2>A bit about me</h2>
 	<section class="promo">
 	<div></div>
@@ -123,13 +150,14 @@
 			I value simplicity, clarity, and accesibility.
 		</p>
 		<p class="readable">I've designed and developed software for
-			After the flood, Condé Nast International, The Financial Times, BBC News, The Natural History Museum, as well as several smaller engagements.
+			<a href="https://aftertheflood.com/">After the flood</a>, <a href="https://www.condenast.com/">Condé Nast</a>, <a href="https://www.ft.com/">The Financial Times</a>, <a href="https://www.bbc.co.uk/news/">BBC News</a>, <a href="https://www.nhm.ac.uk">The Natural History Museum</a>, as well as several smaller engagements.
 		</p> 
 		<p  class="readable">
-			You can email me (<b>tom<span style="display: none">null</span>.g.<span style="display: none">null</span>pearson<span style="display: none">+spam+</span>@gmail.com</b>), follow me on twitter (<b s>@tomp</b>) or github (<b>tomgp</b>).
+			You can email me (<b>tom<span style="display: none">null</span>.g.<span style="display: none">null</span>pearson<span style="display: none">+spam+</span>@gmail.com</b>), find some code I've written on github (<a href="https://www.github.com/tomgp/">tomgp</a>) or, if we know each other you can follow me on twitter (<a href="https://www.twitter.com/tomp">@tomp</a>).
 		</p>
 	</div>
 	</section>
+</section>
 </article>
 </body>
 <!-- <script src="scripts/canvas-draw.js" async></script> -->
