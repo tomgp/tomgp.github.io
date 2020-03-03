@@ -39,14 +39,13 @@
 
 		div p{
 		margin-top:0px;
-		margin-left:10px;
 		}
 		.promo{
 			display:grid;
 			grid-template-columns: 1fr 4fr;
+			grid-column-gap:20px;
 			max-width: 750px;
 		}
-		h3{ display: inline-block; margin:0; font-weight: normal; font-size: inherit;}
 		hr{
 			border: none;
 			border-bottom: solid 1px #0028ff;
@@ -81,64 +80,90 @@
 			width: 100%;
 			height: 100%;
 		}
+
+		p.link-header{
+			border-bottom: 1px solid #ff2800;
+			width:100%;
+			max-width:100%;
+		}
+
+		.link-header a{
+			text-decoration:none;
+			color: #ff2800;
+			width:100%;
+			display:block;
+			padding-top:5px;
+		}
+
+		.link-header a:hover{
+			text-decoration:none;
+			color:white;
+			background: #ff2800;
+		}
+
+		h3{
+			font-weight: normal; 
+			font-size: inherit;
+			display:block;
+			border-bottom:1px dotted;
+		}
+
 	</style>
 </head>
 <body>
 <article>
     <h1>I'm Tom Pearson</h1>
-<section class="intro">
 	<p>
-		This is my personal website.
+		This is my personal website where you'll find things I've written, things I've made, and at the bottom of this page <a href="#about">more about me</a>.
 	</p>
-</section>
 <section id="contents">
-<h2>Contents</h2>
+	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/escape-maps/">Escape From The Aliens in Outer Space map creator</a></p>
 	<section class="promo">
 	<img src="/pictures/home-page/escape.svg" width="150" height="150">
-		<div><p><a href="https://www.toffeemilkshake.co.uk/escape-maps/">Escape From The Aliens in Outer Space map creator</a></p> 
+		<div>
 		<p>A tool allowing players of the awkwardly named tabletop game to make their own maps or edit those that the designers have provided.</p>
 		</div>
 	</section>
+	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/books/">Books I've read</a></p>
 	<section class="promo">
 		<img src="/pictures/home-page/shelf.svg" width="150" height="150">
 		<div>
-			<p><a href="https://www.toffeemilkshake.co.uk/books/">Books I've read</a></p>
 			<p>A list of all the books I've read (not including things I've read to my kids) over the last 10 years or so. Mostly novels.<p>
 		</div>
 	</section>
+	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/words/">Words</a></p>
 	<section class="promo">
 		<img src="/pictures/home-page/words.png" width="150" height="150">
 		<div>
-		<p><a href="https://www.toffeemilkshake.co.uk/words/">Words</a></p>
 		<p>My latest blog. Mainly what I thought about books I've read, some mudane daily life stuff and I've started posting some links to interesting internet stuff I've read on Friday(ish).</p>
 		</div>
 	</section>
+	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/puzzle-poker/">Puzzle Poker</a></p>
 	<section class="promo">
 		<img src="/pictures/home-page/puzzle-poker.svg" width="150" height="150">
 		<div>
-		<p><a href="https://www.toffeemilkshake.co.uk/puzzle-poker/">Puzzle Poker</a></p>
-		<p>A simple game.</p><p>Make poker hands to score points and clear space to make more posker hands.</p>
+		<p>A simple game.</p><p>Make poker hands to score points and clear space to make more poker hands.</p>
 		</div>
 	</section>
+	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/simplify-line/">Line Simplification</a></p>
 	<section class="promo">
 		<img src="/pictures/home-page/line-simplification.svg" width="150" height="150">
 		<div>
-		<p><a href="https://www.toffeemilkshake.co.uk/simplify-line/">Line Simplification</a></p>
 		<p>Simplify the path of a line without losing its key features.</p>
 		<p>Originally written as a drop in replacement for D3 v3's path generator (d3.svg.line), should still work with newer versions.</p>
 		</div>
 	</section>
+	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/d3-iconarray/">Icon array</a></p>
 	<section class="promo">
 		<img src="/pictures/home-page/icon-array.svg" width="150" height="150">
 		<div>
-		<p><a href="https://www.toffeemilkshake.co.uk/d3-iconarray/">Icon array</a></p>
 		<p>A d3 module to help you make legible icon grids out of data, includes the ability to regular breaks to grids to improve legibility and to set the draw order to allow effective use in either horizontal or vertical orientation.</p>
 		</div>
 	</section>
+	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/electoral-college-clusters/">Electoral college dot map</a></p>
 	<section class="promo">
 		<img src="/pictures/home-page/dotmap.svg" width="150" height="150">
 		<div>
-		<p><a href="https://www.toffeemilkshake.co.uk/electoral-college-clusters/">Electoral college dot map</a></p>
 		<p>A brief write-up of the results map I made for the FT's 2016 US election coverage. I really liked the solution we came up with.</p>
 		</div>
 	</section>
@@ -148,14 +173,18 @@
 	<section class="promo">
 	<div></div>
 	<div>
+		<p>I live in North London, zone 3. On the whole I prefer bikes to cars, board games to video games, fiction to non-fiction, and vegetables to meat.</p>
+		<p></p>
+		<h3>Work</h3>
 		<p class="readable">
-			I'm a software developer based in London with over 20 years experience.
+			I'm a software with over 20 years experience.
 			I specialize in working with and visualising data.
-			I value simplicity, clarity, and accesibility.
+			My practise emphasises simplicity, clarity, and accesibility and I subscribe broadly to the tenets of <a href="https://agilemanifesto.org/">the original agile manifesto</a>.
 		</p>
 		<p class="readable">I've designed and developed software for
 			<a href="https://aftertheflood.com/">After the flood</a>, <a href="https://www.condenast.com/">Condé Nast</a>, <a href="https://www.ft.com/">The Financial Times</a>, <a href="https://www.bbc.co.uk/news/">BBC News</a>, <a href="https://www.nhm.ac.uk">The Natural History Museum</a>, as well as several smaller engagements.
 		</p> 
+		<h3>Contact</h3>
 		<p  class="readable">
 			You can email me (<b>tom<span style="display: none">null</span>.g.<span style="display: none">null</span>pearson<span style="display: none">+spam+</span>@gmail.com</b>), find some code I've written on github (<a href="https://www.github.com/tomgp/">tomgp</a>) or, if we know each other you can follow me on twitter (<a href="https://www.twitter.com/tomp">@tomp</a>).
 		</p>
