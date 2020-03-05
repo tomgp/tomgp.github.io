@@ -30,22 +30,40 @@
 		a:hover{
 			background-color: #ff2800;
 			color: #FFF;
-		}
+		}	
 
 		p{
-			max-width: 600px;
+			
 			line-height: 1.5rem;
 		}
 
 		div p{
 		margin-top:0px;
 		}
-		.promo{
+		.promo, section.intro{
 			display:grid;
 			grid-template-columns: 1fr 4fr;
 			grid-column-gap:20px;
-			max-width: 750px;
+			grid-row-gap:20px;
+			
 		}
+		@media (max-width: 600px) {
+			.promo, section.intro{
+				grid-template-columns: 1fr;
+				
+			}
+		}
+
+		@media (min-width: 800px) {
+			body{
+				font-size:1.2rem;
+			}
+
+			p{
+				line-height:2rem;
+			}
+		}
+
 		hr{
 			border: none;
 			border-bottom: solid 1px #0028ff;
@@ -100,7 +118,9 @@
 			color:white;
 			background: #ff2800;
 		}
-
+		h2{
+		margin-top:100px;
+		}
 		h3{
 			font-weight: normal; 
 			font-size: inherit;
@@ -108,14 +128,30 @@
 			border-bottom:1px dotted;
 		}
 
+		p.intro{
+			margin-bottom:100px;
+		}
+
+		article{
+			margin-left:auto;
+			margin-right:auto;
+			max-width:1000px;
+		}
+		.place-holder{
+			min-width:150px;
+		}
 	</style>
 </head>
 <body>
 <article>
-    <h1>I'm Tom Pearson</h1>
-	<p>
+
+<h1>Tom Pearson</h1>
+<section class="intro">
+	<div class="place-holder"></div>
+	<p class="intro">
 		This is my personal website where you'll find things I've written, things I've made, and at the bottom of this page <a href="#about">more about me</a>.
 	</p>
+</section>
 <section id="contents">
 	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/escape-maps/">Escape From The Aliens in Outer Space map creator</a></p>
 	<section class="promo">
@@ -178,7 +214,7 @@
 <section id="about">
 	<h2>A bit about me</h2>
 	<section class="promo">
-	<div></div>
+	<div class="place-holder"></div>
 	<div>
 		<p>I live in North London, zone 3. On the whole I prefer bikes to cars, board games to video games, fiction to non-fiction, and vegetables to meat.</p>
 		<p></p>
@@ -186,7 +222,7 @@
 		<p class="readable">
 			I'm a software with over 20 years experience.
 			I specialize in working with and visualising data.
-			My practise emphasises simplicity, clarity, and accesibility and I subscribe broadly to the tenets of <a href="https://agilemanifesto.org/">the original agile manifesto</a>.
+			My practise emphasises simplicity, clarity, and accesibility.
 		</p>
 		<p class="readable">I've designed and developed software for
 			<a href="https://aftertheflood.com/">After the flood</a>, <a href="https://www.condenast.com/">Condé Nast</a>, <a href="https://www.ft.com/">The Financial Times</a>, <a href="https://www.bbc.co.uk/news/">BBC News</a>, <a href="https://www.nhm.ac.uk">The Natural History Museum</a>, as well as several smaller engagements.
