@@ -68,28 +68,6 @@
 			border: none;
 			border-bottom: solid 1px #0028ff;
 		}
-		.sketch-canvas{
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			pointer-events: none;
-		}
-		.unselectable{
-			-moz-user-select: none;
-			-webkit-user-select: none;
-			-ms-user-select:none;
-			user-select:none;
-			-o-user-select:none;
-		}
-
-		.drawable{
-			cursor: url(pencil.png), auto;
-		}
-		a.drawable:hover{
-			cursor: url(pencil.png), auto;
-		}
 
 		.info{
 			position: fixed;
@@ -140,6 +118,55 @@
 		.place-holder{
 			min-width:150px;
 		}
+
+		.promo img{
+			width: 100%;
+			height: 100%;
+		}
+
+		p.link-header{
+			border-bottom: 1px solid #ff2800;
+			width:100%;
+			max-width:100%;
+		}
+
+		.link-header a{
+			text-decoration:none;
+			color: #ff2800;
+			width:100%;
+			display:block;
+			padding-top:5px;
+		}
+
+		.link-header a:hover{
+			text-decoration:none;
+			color:white;
+			background: #ff2800;
+		}
+		h2{
+		margin-top:100px;
+		}
+		h3{
+			font-weight: normal; 
+			font-size: inherit;
+			display:block;
+			border-bottom:1px dotted;
+		}
+
+		p.intro{
+			margin-bottom:100px;
+		}
+
+		article{
+			margin-left:auto;
+			margin-right:auto;
+			max-width:1000px;
+		}
+		.place-holder{
+			min-width:150px;
+		a.image-link:hover{
+		background-color:white
+		}
 	</style>
 </head>
 <body>
@@ -155,35 +182,45 @@
 <section id="contents">
 	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/escape-maps/">Escape From The Aliens in Outer Space map creator</a></p>
 	<section class="promo">
+	<a href="https://www.toffeemilkshake.co.uk/escape-maps/" class="image-link">
 	<img src="/pictures/home-page/escape.svg" width="150" height="150">
+	</a>
 		<div>
 		<p>A tool allowing players of the awkwardly named tabletop game to make their own maps or edit those that the designers have provided.</p>
 		</div>
 	</section>
 	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/books/">Books I've read</a></p>
 	<section class="promo">
+		<a href="https://www.toffeemilkshake.co.uk/books/" class="image-link">
 		<img src="/pictures/home-page/shelf.svg" width="150" height="150">
+		</a>
 		<div>
 			<p>A list of all the books I've read (not including things I've read to my kids) over the last 10 years or so. Mostly novels.<p>
 		</div>
 	</section>
 	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/words/">Words</a></p>
 	<section class="promo">
-		<img src="/pictures/home-page/words.png" width="150" height="150">
+		<a href="https://www.toffeemilkshake.co.uk/words/" class="image-link">
+			<img src="/pictures/home-page/words.png" width="150" height="150">
+		</a>
 		<div>
 		<p>My latest blog. Mainly what I thought about books I've read, some mudane daily life stuff and I've started posting some links to interesting internet stuff I've read on Friday(ish).</p>
 		</div>
 	</section>
 	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/puzzle-poker/">Puzzle Poker</a></p>
 	<section class="promo">
-		<img src="/pictures/home-page/puzzle-poker.svg" width="150" height="150">
+		<a href="https://www.toffeemilkshake.co.uk/puzzle-poker/" class="image-link">
+			<img src="/pictures/home-page/puzzle-poker.svg" width="150" height="150">
+		</a>
 		<div>
 		<p>A simple game.</p><p>Make poker hands to score points and clear space to make more poker hands.</p>
 		</div>
 	</section>
 	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/simplify-line/">Line Simplification</a></p>
 	<section class="promo">
+	<a href="https://www.toffeemilkshake.co.uk/simplify-line/" class="image-link">
 		<img src="/pictures/home-page/line-simplification.svg" width="150" height="150">
+		</a>
 		<div>
 		<p>Simplify the path of a line without losing its key features.</p>
 		<p>Originally written as a drop in replacement for D3 v3's path generator (d3.svg.line), should still work with newer versions.</p>
@@ -191,21 +228,27 @@
 	</section>
 	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/d3-iconarray/">Icon array</a></p>
 	<section class="promo">
+	<a href="https://www.toffeemilkshake.co.uk/d3-iconarray/" class="image-link">
 		<img src="/pictures/home-page/icon-array.svg" width="150" height="150">
+		</a>
 		<div>
 		<p>A d3 module to help you make legible icon grids out of data, includes the ability to regular breaks to grids to improve legibility and to set the draw order to allow effective use in either horizontal or vertical orientation.</p>
 		</div>
 	</section>
 	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/electoral-college-clusters/">Electoral college dot map</a></p>
 	<section class="promo">
+	<a href="https://www.toffeemilkshake.co.uk/electoral-college-clusters/" class="image-link">
 		<img src="/pictures/home-page/dotmap.svg" width="150" height="150">
+		</a>
 		<div>
 		<p>A brief write-up of the results map I made for the FT's 2016 US election coverage. I really liked the solution we came up with.</p>
 		</div>
 	</section>
 	<p class="link-header"><a href="https://www.toffeemilkshake.co.uk/uk-cities/">How many UK cities can you name?</a></p>
 	<section class="promo">
+	<a href="https://www.toffeemilkshake.co.uk/uk-cities/" class="image-link">
 		<img src="/pictures/home-page/uk-cities.svg" width="150" height="150">
+		</a>
 		<div>
 		There are only 69 cities in the UK but I bet you can't name them all without looking at wikipedia.</p>
 		</div>
