@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link type="application/atom+xml" rel="alternate" href="https://www.toffeemilkshake.co.uk/words/feed.xml" title="Tom Pearson" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tom Pearson - Work</title>
+	<style type="text/css">
+		body{
+			overscroll-behavior: none;
+			-webkit-overflow-scrolling: auto;
+		}
+		*{
+			font-family: sans-serif;
+			color: #0028ff;
+		}
+		pre{
+			font-family:monospace;
+		}
+		#home{
+			margin: 2rem;
+		}
+
+		a{
+            color:#ff2800;
+		}
+		a:visited{
+			color: #0028ff;
+		}
+		a:hover{
+			background-color: #ff2800;
+			color: #FFF;
+		}	
+
+		p{
+			
+			line-height: 1.5rem;
+		}
+
+		div p{
+		margin-top:0px;
+		}
+		.promo, section.intro{
+			display:grid;
+			grid-template-columns: 1fr 4fr;
+			grid-column-gap:20px;
+			grid-row-gap:20px;
+			
+		}
+
+
+		hr{
+			border: none;
+			border-bottom: solid 1px #0028ff;
+		}
+
+		.info{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		p.link-header{
+			border-bottom: 1px solid #ff2800;
+			width:100%;
+			max-width:100%;
+		}
+
+		.link-header a{
+			text-decoration:none;
+			color: #ff2800;
+			width:100%;
+			display:block;
+			padding-top:5px;
+		}
+
+		.link-header a:hover{
+			text-decoration:none;
+			color:white;
+			background: #ff2800;
+		}
+
+		p.intro{
+			margin-bottom:100px;
+		}
+
+		article{
+			margin-left:auto;
+			margin-right:auto;
+			max-width:1000px;
+		}
+		.place-holder{
+			min-width:150px;
+		}
+
+		.promo img{
+			width: 100%;
+			height: 100%;
+		}
+
+		p.link-header{
+			border-bottom: 1px solid #ff2800;
+			width:100%;
+			max-width:100%;
+		}
+
+		.link-header a{
+			text-decoration:none;
+			color: #ff2800;
+			width:100%;
+			display:block;
+			padding-top:5px;
+		}
+
+		.link-header a:hover{
+			text-decoration:none;
+			color:white;
+			background: #ff2800;
+		}
+		h2{
+		    margin-top:0px;
+            font-size:1rem;
+		}
+		h3{
+			font-weight: normal; 
+			font-size: inherit;
+			display:block;
+			border-bottom:1px dotted;
+		}
+
+		p.intro{
+			margin-bottom:100px;
+		}
+
+		article{
+			margin-left:auto;
+			margin-right:auto;
+			max-width:1000px;
+		}
+		.place-holder{
+			min-width:150px;
+        }   
+		a.image-link:hover{
+    		background-color:white
+		}
+        img{
+            width:100%;
+            max-width:641px;
+        }
+        
+        @media (max-width: 600px) {
+			.promo, section.intro{
+				grid-template-columns: 1fr;
+				
+			}
+            h2{
+                margin-top:100px;   
+                font-size:1.4rem;
+            }
+		}
+
+		@media (min-width: 800px) {
+			body{
+				font-size:1.2rem;
+			}
+
+			p{
+				line-height:2rem;
+			}
+		}
+	</style>
+</head>
+<body>
+<article>
+
+<h1>Work, BBC News</h1>
+<section class="intro">
+	<div class="place-holder"></div>
+	<div class="intro">
+		<p>From 2005 to 2012 I worked as a newsroom developer on the BBC News website. During that time I produced accessible and informative data-visualisations, built tools to automate the workflows of journalists and editorial-designers, and enabled investigative data-journalism.</p>
+        <p>This page contains some brief thoughts and recollections about some of the more prominent projects (mostly elections) I worked on many of which are now lost thanks to a) <a href="https://en.wikipedia.org/wiki/Thoughts_on_Flash">Flash</a> and b) the BBC's somewhat inconsistent approach to conserving its archive.</p><p>Apologies for the poor quality of some of these images, they accidentally got jpegged at some point.</p>
+        <p>Also, please note that these projects were all team efforts, I've singled out a few people who made big differences to the way I thought about the work at the time but I've missed out many more.
+	</div>
+</section>
+<section  class="intro" id="election-map-2005">
+    <div>
+    <h2>General election 2005, results map</h2>
+    </div>
+    <img src="/pictures/election2005.jpg">
+    <div></div>
+    <div>
+        <p>The BBC had produced a similar dynamic, interactive map for the 2004 US presidential election but the UKs greater complexity  (more constituencies, the coast of Scotland) meant a ground-up rewrite was required. This included creating a Java app to parse and simplify SVGs before converting them to Adobe's binary .SWF format.</p>
+        <p>The final page weighed in at 365kb, necessitating the filling in of a form requesting that we be allowed to exceed the page size limit for the site which, if memory serves me correctly, was at that point was 75kb (including images) for story pages.</p>
+        <p>This was a pretty stressful project for me to start my BBC tenure with, I felt very much thrown in at the deep end. Thankfully <a href="https://www.linkedin.com/in/robnet/">Rob Bateman</a>, at the time my counterpart on the BBC Sport site, was on hand to explain to me how to write Flash apps of significant complexity &ndash; this was a moment when I felt my skills genuinely leveled up.</p>
+    </div>
+</section>
+<section  class="intro" id="us-election-2008">
+    <div>
+    <h2>US Election results 2008</h2>
+    </div>
+    <img src="/pictures/us-election-results-2008.jpg">
+    <div></div>
+    <div>
+        <p>This was my first election as lead developer and the project coincided with my partner and me finding out we were
+        expecting our first child. 
+        The combined stress meant that I didn't sleep properly for a good couple of months running up to November 2008, waking every day at 3am and 
+        only falling back to sleep to snatch half an hour just before the alarm went off.</p>
+        <p>This election offered the chance for us to rethink our approach to results graphics. Instead of one big map and a set of data-tables we pulled things
+        apart into separate modules allowing us greater presentational flexibility and presenting the opportunity to build 
+        different sized interactive assets for different contexts around the site, home-page, side-bar etc. Code-wise this was made possible by ActionScript 3 which tamed a lot of the complexity previously inherent in producing code-driven Flash projects and decent module system for code reuse across the suite of products.</p>
+        <p>Our ability to create a ton of different sized assets was bolstered greatly by <a href="https://www.linkedin.com/in/scott-byrne-fraser-b47055a/">Scott Byrne-Fraser's</a> 
+        prodigious work ethic as the design lead on the project.</p>
+        <p>In retrospect, this process of decomposing our apps into kind of declarative components helped me to start to get my head around
+        the responsive design process that was to sweep through the industry a couple of years later.</p>
+        <p>Finally, this was the last election where I stayed in the office overnight on election night, fixing bugs 
+        (or more like reassuring people that they should just wait 30 seconds and the data changes would ripple through the system) and so on.
+        The election of Barak Obama seemed like cause for optimism and I left the office at 8 in the morning in a great mood,  walking home and stopping to eat
+        a huge breakfast at Jack's in Queens Park.</p>
+    </div>
+</section>
+<section  class="intro" id="euro-tv">
+    <div>
+    <h2>European election 2009 TV touchscreen app</h2>
+    </div>
+    <img src="/pictures/maitliss-euro.jpg">
+    <div></div>
+    <div>
+        <p>We made a special version of our European elction results app for Emily Maitlis to use on TV.</p>
+        <p>For weeks during rehearsals we badgered the TV team to let us teach their presenter how to use it but they never had time. 
+        In the end Maitliss just stood in front of it looking nervous and didn't press anything. 
+        I don't imagine anyone else noticed or cared.</p>
+        <p>I still feel bad that <a href="https://www.linkedin.com/in/aodhol/">Aodh Lionaird</a> who handled the conversion of the app for 
+        the big screen might feel his work was wasted but I always look back fondly on our pair programing together on the project as a 
+        particularly productive team-up.</p>
+        <p>PS. I hope this didn't come across as critical of Maitlis or anyone on the TV side. 
+        It's more a comment on the difficulty of working across organisational units with differing priorities and understandings.
+        </p>
+    </div>
+</section>
+<section  class="intro" id="crash-map">
+    <div>
+    <h2>Road traffic collision map</h2>
+    </div>
+    <img src="/pictures/crash-map.gif">
+    <div></div>
+    <div>
+        <p>For this project we got hold of ten years worth of road traffic collision data, analysed, 
+        interpreted and, presented the findings via a series of stories and some explorable maps.</p>
+        <p>The project's success was, in large part, down to <a href="https://www.linkedin.com/in/lulupinney/?originalSubdomain=uk">Lulu Pinney</a> whose thoughtful approach 
+        was key in making this mass of data interesting and meaningful to the audience.</p>
+        <p>Initially we wanted to use a semantic-web triple store to allow users to query the data in interesting ways.
+        This turned out to be a bad idea, the queries were unbearably slow even when cached and the benefits gained from the flexibly modeled data were tiny. In the end we used a bunch of CSV files and a few hundred lines of PHP which did the job admirably.
+        A lesson in not letting an 'exciting' technology drive a project. Most of the time the job of a journalist or of anyone else presenting data is to do the interpretation, finding the insights, rather than presenting the entire data set and expecting the audience to find the interesting stories, a task at which all but the most motivated will fail.</p>
+        <p>The map above is an eyecatching promotional image showing the whole dataset.</p>
+    </div>
+</section>
+<section  class="intro" id="seat-calculator">
+    <div>
+    <h2>General election seat calculator, 2010</h2>
+    </div>
+    <img src="/pictures/seat-calculator-2010.jpg">
+    <div></div>
+    <div>
+        <p>Dissatisfied with the clunky way the BBCs traditional swingometer represented the mechanisms of the first past the post electoral system 
+        I started thinking about this novel UI idea straight after the 2005 election (using the vote-share pie chart as a controller). I made a 
+        prototype in the (at the time) new ActionScript 3 the performance increases offered by which made it possible to 
+        calculate swing and party-control on all the constituencies fast enough to keep the interaction smooth.</p>
+        <p>My goal was to use the basic idea of uniform national swing to illustrate the tradeoffs inherent in the first past the post system.<p>
+        <p>When the 2010 election rolled around the powers-that-be were not willing to prioritise this untested idea over 
+        the swingometer so I ended up building the swingometer with an eye towards repurposing most of the code and bolting on 
+        my prototype front end. Similarly, my colleague <a href="https://www.linkedin.com/in/harjit-kaura-1aa02253/">Harjit Kuara</a>
+        carved out time to finesse the UI and graphic design on the side. Luckily our work was not wasted, when people saw the project working we were given the go-ahead for publication.</p>
+        <p>In the end I was pleased with the reception this got. It didn't do massive numbers but it did inform the debate around our electoral system with both <a href="https://www.theguardian.com/commentisfree/2010/apr/24/clegg-electoral-reform-tactics-romance">Polly Toynbee</a> and <a href="https://www.theguardian.com/commentisfree/2010/apr/25/proportional-representation-voting-will-hutton">Will Hutton</a> writing prominent pieces
+        in the Guardian mentioning (in the print version of the latter case heavily illustrated by) the application.  
+        </p>
+    </div>
+</section>
+</article>
+<div class="credit">
+<a href="/">Tom Pearson</a>
+<time datetime="2020-08-26 00:00:00 +0000">26 August 2020</time>
+</div>
+</body>
+</html>
