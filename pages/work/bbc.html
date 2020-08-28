@@ -170,6 +170,10 @@
 				line-height:2rem;
 			}
 		}
+		.icon{
+			width:20px;
+			height:20px;
+		}
 	</style>
 </head>
 <body>
@@ -180,25 +184,27 @@
 	<div class="place-holder"></div>
 	<div class="intro">
 		<p>From 2005 to 2012 I worked as a newsroom developer on the BBC News website. During that time I produced accessible and informative data-visualisations, built tools to automate the workflows of journalists and editorial-designers, and enabled investigative data-journalism.</p>
-        <p>This page contains some brief thoughts and recollections about some of the more prominent projects (mostly elections) I worked on many of which are now lost thanks to a) <a href="https://en.wikipedia.org/wiki/Thoughts_on_Flash">Flash</a> and b) the BBC's somewhat inconsistent approach to conserving its archive.</p><p>Apologies for the poor quality of some of these images, they accidentally got jpegged at some point.</p>
+        <p>This page contains some brief thoughts and recollections about some of the more prominent projects (mostly elections) I worked on, many of which are now lost or semi functional thanks to a) <a href="https://en.wikipedia.org/wiki/Thoughts_on_Flash">Flash</a> and b) the BBC's somewhat inconsistent approach to conserving its archive.</p><p>Apologies for the poor quality of some of these images, they accidentally got jpegged at some point.</p>
         <p>Also, please note that these projects were all team efforts, I've singled out a few people who made big differences to the way I thought about the work at the time but I've missed out many more.
 	</div>
 </section>
 <section  class="intro" id="election-map-2005">
     <div>
     <h2>General election 2005, results map</h2>
+	<a href="http://news.bbc.co.uk/2/hi/uk_news/politics/vote_2005/default.stm"><img class="icon" src="/pictures/link-symbol.svg"></a>
     </div>
     <img src="/pictures/election2005.jpg">
     <div></div>
     <div>
         <p>The BBC had produced a similar dynamic, interactive map for the 2004 US presidential election but the UKs greater complexity  (more constituencies, the coast of Scotland) meant a ground-up rewrite was required. This included creating a Java app to parse and simplify SVGs before converting them to Adobe's binary .SWF format.</p>
         <p>The final page weighed in at 365kb, necessitating the filling in of a form requesting that we be allowed to exceed the page size limit for the site which, if memory serves me correctly, was at that point was 75kb (including images) for story pages.</p>
-        <p>This was a pretty stressful project for me to start my BBC tenure with, I felt very much thrown in at the deep end. Thankfully <a href="https://www.linkedin.com/in/robnet/">Rob Bateman</a>, at the time my counterpart on the BBC Sport site, was on hand to explain to me how to write Flash apps of significant complexity &ndash; this was a moment when I felt my skills genuinely leveled up.</p>
+        <p>This was a pretty stressful project for me to start my BBC tenure with, I felt very much thrown in at the deep end. Thankfully <a href="https://www.linkedin.com/in/robnet/">Rob Bateman</a>, at the time my counterpart on the BBC Sport site, was on hand to explain to me how to write Flash apps of significant complexity &ndash; this was an early career moment when I felt my skills genuinely leveled up.</p>
     </div>
 </section>
 <section  class="intro" id="us-election-2008">
     <div>
     <h2>US Election results 2008</h2>
+	<a href="http://news.bbc.co.uk/1/hi/in_depth/americas/2008/vote_usa_2008/default.stm"><img class="icon" src="/pictures/link-symbol.svg"></a>
     </div>
     <img src="/pictures/us-election-results-2008.jpg">
     <div></div>
@@ -223,11 +229,12 @@
 <section  class="intro" id="euro-tv">
     <div>
     <h2>European election 2009 TV touchscreen app</h2>
+	<a href="http://news.bbc.co.uk/1/shared/bsp/hi/elections/euro/09/html/ukregion_999999.stm"><img class="icon" src="/pictures/link-symbol.svg"></a>
     </div>
     <img src="/pictures/maitliss-euro.jpg">
     <div></div>
     <div>
-        <p>We made a special version of our European elction results app for Emily Maitlis to use on TV.</p>
+        <p>We made a special version of our European election results app for Emily Maitlis to use on TV.</p>
         <p>For weeks during rehearsals we badgered the TV team to let us teach their presenter how to use it but they never had time. 
         In the end Maitliss just stood in front of it looking nervous and didn't press anything. 
         I don't imagine anyone else noticed or cared.</p>
@@ -242,12 +249,12 @@
 <section  class="intro" id="crash-map">
     <div>
     <h2>Road traffic collision map</h2>
+	<a href="https://www.bbc.co.uk/news/uk-15975720"><img class="icon" src="/pictures/link-symbol.svg"></a>
     </div>
     <img src="/pictures/crash-map.gif">
     <div></div>
     <div>
-        <p>For this project we got hold of ten years worth of road traffic collision data, analysed, 
-        interpreted and, presented the findings via a series of stories and some explorable maps.</p>
+        <p>For this project we got hold of eleven years of road traffic collision data, analysed and interpreted it, and presented the findings via a series of stories and some explorable maps.</p>
         <p>The project's success was, in large part, down to <a href="https://www.linkedin.com/in/lulupinney/?originalSubdomain=uk">Lulu Pinney</a> whose thoughtful approach 
         was key in making this mass of data interesting and meaningful to the audience.</p>
         <p>Initially we wanted to use a semantic-web triple store to allow users to query the data in interesting ways.
@@ -259,6 +266,7 @@
 <section  class="intro" id="seat-calculator">
     <div>
     <h2>General election seat calculator, 2010</h2>
+	<a href="http://news.bbc.co.uk/1/hi/uk_politics/election_2010/8609989.stm"><img class="icon" src="/pictures/link-symbol.svg"></a>
     </div>
     <img src="/pictures/seat-calculator-2010.jpg">
     <div></div>
@@ -277,6 +285,15 @@
         </p>
     </div>
 </section>
+<section class="intro">
+ <div><h2>The end</h2></div>
+ <div>
+ <p>For my last few years at the BBC we'd been gradually moving away from Flash as native web technologies caught up and mobile phone usage grew.</p>
+ <p>My last project for the site was kicking off the 2012 US Election coverage, laying out the technical road map for the BBCs first Flash free results service since the general election of 2001.</p>
+ <p>After eight years I decided it was time for something new. I'd felt for some time that changes to the BBCs structure had made producing novel work more difficult &ndash; specifically the BBC News site went from being an integrated operation where technical, design and editorial teams all operated in the same business unit to three separate divisions and the move to a new office near Regent street seemed a good stepping off point, psychologically speaking.</p>
+ <p>After a few months of freelance work <a href="ft.html">I joined the Financial Times</a></p>
+ </div>
+<section>
 </article>
 <div class="credit">
 <a href="/">Tom Pearson</a>

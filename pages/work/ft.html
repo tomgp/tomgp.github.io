@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link type="application/atom+xml" rel="alternate" href="https://www.toffeemilkshake.co.uk/words/feed.xml" title="Tom Pearson" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tom Pearson - BBC Work</title>
+	<style type="text/css">
+		body{
+			overscroll-behavior: none;
+			-webkit-overflow-scrolling: auto;
+		}
+		*{
+			font-family: sans-serif;
+			color: #0028ff;
+		}
+		pre{
+			font-family:monospace;
+		}
+		#home{
+			margin: 2rem;
+		}
+
+		a{
+            color:#ff2800;
+		}
+		a:visited{
+			color: #0028ff;
+		}
+		a:hover{
+			background-color: #ff2800;
+			color: #FFF;
+		}	
+
+		p{
+			
+			line-height: 1.5rem;
+		}
+
+		div p{
+		margin-top:0px;
+		}
+		.promo, section.intro{
+			display:grid;
+			grid-template-columns: 1fr 4fr;
+			grid-column-gap:20px;
+			grid-row-gap:20px;
+			
+		}
+
+
+		hr{
+			border: none;
+			border-bottom: solid 1px #0028ff;
+		}
+
+		.info{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		p.link-header{
+			border-bottom: 1px solid #ff2800;
+			width:100%;
+			max-width:100%;
+		}
+
+		.link-header a{
+			text-decoration:none;
+			color: #ff2800;
+			width:100%;
+			display:block;
+			padding-top:5px;
+		}
+
+		.link-header a:hover{
+			text-decoration:none;
+			color:white;
+			background: #ff2800;
+		}
+
+		p.intro{
+			margin-bottom:100px;
+		}
+
+		article{
+			margin-left:auto;
+			margin-right:auto;
+			max-width:1000px;
+		}
+		.place-holder{
+			min-width:150px;
+		}
+
+		.promo img{
+			width: 100%;
+			height: 100%;
+		}
+
+		p.link-header{
+			border-bottom: 1px solid #ff2800;
+			width:100%;
+			max-width:100%;
+		}
+
+		.link-header a{
+			text-decoration:none;
+			color: #ff2800;
+			width:100%;
+			display:block;
+			padding-top:5px;
+		}
+
+		.link-header a:hover{
+			text-decoration:none;
+			color:white;
+			background: #ff2800;
+		}
+		h2{
+		    margin-top:0px;
+            font-size:1rem;
+		}
+		h3{
+			font-weight: normal; 
+			font-size: inherit;
+			display:block;
+			border-bottom:1px dotted;
+		}
+
+		p.intro{
+			margin-bottom:100px;
+		}
+
+		article{
+			margin-left:auto;
+			margin-right:auto;
+			max-width:1000px;
+		}
+		.place-holder{
+			min-width:150px;
+        }   
+		a.image-link:hover{
+    		background-color:white
+		}
+        img{
+            width:100%;
+            max-width:641px;
+        }
+        
+        @media (max-width: 600px) {
+			.promo, section.intro{
+				grid-template-columns: 1fr;
+				
+			}
+            h2{
+                margin-top:100px;   
+                font-size:1.4rem;
+            }
+		}
+
+		@media (min-width: 800px) {
+			body{
+				font-size:1.2rem;
+			}
+
+			p{
+				line-height:2rem;
+			}
+		}
+		.icon{
+			width:20px;
+			height:20px;
+		}
+	</style>
+</head>
+<body>
+<article>
+
+<h1>Work, The Financial Times</h1>
+<section class="intro">
+	<div class="place-holder"></div>
+	<div class="intro">
+		<p>From 2012 to 2017 I worked at The Financial Times helping to build a team of developers within the newsroom and level-up the newsroom's capacity for producing bespoke data visualisation.</p>
+        <p>As with <a href="bbc.html">my time at the BBC</a> our coverage of elections provides a series of high-profile milestones showing the team's development.</p>
+        <p>Unlike the BBC the FT has a smaller more focused audience and fewer resources. This allowed for a more flexibility in approach and greater leeway to experiment. Along-side this experimentation we made great strides in automating rote data visualisation both for the web and for print.</p>
+	</div>
+</section>
+<section  class="intro" id="twitter-valueation">
+    <div>
+    <h2>Twitter valuation calculator</h2>
+	<a href="http://ig-legacy.ft.com/content/8ae5045c-4159-11e3-b064-00144feabdc0">
+        <img class="icon" src="/pictures/link-symbol.svg">
+    </a>
+    </div>
+    <img src="/pictures/twitter-valuation.png">
+    <div></div>
+    <div>
+    <p>Most projects at the FT were short, typically a couple of weeks from inception to publication and for me would often involve a steep learning curve -- hold on, what's EBITDA again? What do negative bond yields actually mean? Bitcoin? etc. The Twitter valuation calculator is a good example. The <a href="https://www.ft.com/lex">Lex desk</a> had developed an Excel model for valuing companies and wanted to use this to illustrate the shortcomings of traditional valuation methods in explaing the share price of Silicon Valley venture-capital backed startups.</p>
+    <p>A couple of years later we were able to reuse the basic framework to talk about <a href="http://ig-legacy.ft.com/content/d72ec42a-2f87-11e4-83e4-00144feabdc0">Alibaba's valuation</a>.</p>
+    </div>
+</section>
+<section  class="intro" id="twitter-valuation">
+    <div>
+    <h2>Nightingale charts</h2>
+	<!-- <a href=""><img class="icon" src="/pictures/link-symbol.svg"></a> -->
+    </div>
+    <img src="/pictures/nightingale-prototype.png">
+    <div></div>
+    <div>
+    <p>One of the big challenges at the FT was balancing the demands on the graphics team between making charts for the daily newspaper and getting time for longer duration web projects. Most requests would come to the graphics team in the form of specifically formatted 'pipeline' files which were passed into an antiquated system which eventually spat out a document which designers could finesse in illustrator the whole thing taking a significant amount of time and labour.</p>
+    <p>We did some research (counting) and worked out that around 70-80% of the charts published in the paper were single time-series line charts. If we could make the process of creating Illustrator ready line charts easier then we'd free up valueable time to do something more interesting. The prototype pictured above was put together over the course of two days; you take a pipeline file, drop it on a web page and hey presto you have a simple chart -- I called it 'pipeline drop'. My colleague Luke Kavanagh with his natural flair for naming things re-christend it Nightingale and we were off. This project once again brought home to me the power of prototyping as a way to prove value and explain otherwise dull or abtruse bits of software.</p>
+    </div>
+</section>
+<section  class="intro" id="autograph">
+    <div>
+    <h2>Autograph</h2>
+	<a href=""><img class="icon" src="/pictures/link-symbol.svg"></a>
+    </div>
+    <img src="/pictures/dashboards.jpg">
+    <div></div>
+    <div>
+    <p>Building on the work we'd done in creating Nightingale (above) we created an automatic chart generating service, simply add data sources to a spreadsheet and on a regular schedule charts would be generated as require, Luke once again came up with the goods re the name 'Autograph'. This allowed for the creation of 'economic dashboards' for a number of countries which could provide context for simple macro economic stories such as interest rate changes etc.</p>
+    </div>
+</section>
+UNDER CONSTRUCTION!
+<!-- <section  class="intro" id="twitter-valueation">
+    <div>
+    <h2>Election 2015</h2>
+	<a href="https://elections.ft.com/uk/2015/results/"><img class="icon" src="/pictures/link-symbol.svg"></a>
+    </div>
+    <img src="/pictures/">
+    <div></div>
+    <div>
+    <p>DESCRIPTION</p>
+    </div>
+</section>
+<section  class="intro" id="twitter-valueation">
+    <div>
+    <h2>Brexit</h2>
+	<a href="https://ig.ft.com/sites/brexit-polling/"><img class="icon" src="/pictures/link-symbol.svg"></a>
+    </div>
+    <img src="/pictures/">
+    <div></div>
+    <div>
+    <p>DESCRIPTION, results: https://ig.ft.com/sites/elections/2016/uk/eu-referendum/</p>
+    </div>
+</section>
+<section  class="intro" id="twitter-valueation">
+    <div>
+    <h2>US 2016</h2>
+	<a href=""><img class="icon" src="/pictures/link-symbol.svg"></a>
+    </div>
+    <img src="/pictures/">
+    <div></div>
+    <div>
+    <p>DESCRIPTION</p>
+    </div>
+</section>
+<section  class="intro" id="twitter-valueation">
+    <div>
+    <h2>UK General election 2017</h2>
+	<a href=""><img class="icon" src="/pictures/link-symbol.svg"></a>
+    </div>
+    <img src="/pictures/">
+    <div></div>
+    <div>
+    <p>DESCRIPTION</p>
+    </div>
+</section> -->
+</article>
+<div class="credit">
+<a href="/">Tom Pearson</a>
+<time datetime="2020-08-26 00:00:00 +0000">26 August 2020</time>
+</div>
+</body>
+</html>
