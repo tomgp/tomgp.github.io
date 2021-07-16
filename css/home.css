@@ -1,0 +1,48 @@
+:root {
+  --garish-text-colour: #0028ff;
+  --text-colour: #000;
+  --link-colour:  #ff2800;
+  --background-colour: #fff;
+}
+
+body{
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+  font-size: 1rem;
+  display:grid;
+  font-family: sans-serif;
+  color: var(--text-colour);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+h2, h3 {
+  font-size: 1.5rem;
+  letter-spacing: .009em;
+}
+h1, h2, h3 {
+  margin-bottom: .5rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+article {
+  max-width: 640px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a{
+  color: var(--text-colour);
+  text-decoration: none;
+  border-bottom: 1px solid var(--link-colour);
+}
+
+a:hover{
+  color: var(--link-colour);
+}
