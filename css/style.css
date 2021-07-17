@@ -5,7 +5,10 @@ body{
 p{
 	line-height: 1.4rem;
 }
-
+h3{
+	border:none;
+	border-bottom: solid 1px var(--text-colour);
+}
 .content img{
 	float:left;
 }
