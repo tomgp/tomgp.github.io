@@ -16,6 +16,13 @@ body{
   color: var(--text-colour);
 }
 
+hr{
+	border:none;
+	border-bottom: solid 1px var(--text-colour);
+}
+img{
+  width:100%;
+}
 h3 {
   font-size: 1.25rem;
 }
