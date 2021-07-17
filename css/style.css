@@ -9,8 +9,9 @@ hr{
 	border:none;
 	border-bottom: solid 1px var(--text-colour);
 }
-.content img{
-	float:left;
+
+img{
+	width:100%;
 }
 
 .footer{
