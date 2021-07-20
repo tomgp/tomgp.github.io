@@ -12,5 +12,11 @@
     "https://www.toffeemilkshake.co.uk/uk-cities/",
     "https://www.toffeemilkshake.co.uk/words/",
     "https://www.toffeemilkshake.co.uk/words/2021/03/31/loeg-iv.html"
-  ]
+  ],
+  "defaults": {
+        "reporters": [
+            "cli",
+            "json"
+        ]
+    },
 }
