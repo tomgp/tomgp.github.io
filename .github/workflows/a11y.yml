@@ -13,4 +13,4 @@ jobs:
           node-version: 14
       - name: Run pa11y
         run: |
-          npx pa11y --wait 5000 http://www.toffeemilkshake.co.uk
+          npx pa11y-ci --config pa11y-config.json 
