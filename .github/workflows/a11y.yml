@@ -13,7 +13,7 @@ jobs:
           node-version: 14
       - name: Run pa11y
         run: |
-          npx pa11y-ci --config pa11y-config.json 
+          npx pa11y-ci --config pa11y-config.json --threshold 1000
       - name: Commit and push changed files
         run: |
           git config user.name "Automated"
