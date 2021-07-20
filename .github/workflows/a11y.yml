@@ -1,0 +1,16 @@
+name: pa11y
+on:
+  workflow_dispatch:
+
+jobs:
+  pa11y:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Run pa11y
+        run: |
+          npx pa11y --wait 5000 http://www.toffeemilkshake.co.uk
