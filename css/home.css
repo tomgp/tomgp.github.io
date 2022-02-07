@@ -23,18 +23,22 @@ hr{
 img{
   width:100%;
 }
-h3 {
-  font-size: 1.25rem;
-}
-h2, h3 {
-  font-size: 1.5rem;
-  letter-spacing: .009em;
-}
+
 h1, h2, h3 {
   margin-bottom: .5rem;
   line-height: 1.25;
   font-weight: 600;
+  letter-spacing: -0.05rem;
 }
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h2, h3 {
+  font-size: 1.5rem;
+}
+
 
 article, header, footer {
   max-width: 640px;
