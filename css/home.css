@@ -35,9 +35,6 @@
        url('/css/Newsreader/newsreader-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-
-
-
 body{
   overscroll-behavior: none;
   -webkit-overflow-scrolling: auto;
@@ -109,4 +106,8 @@ input, button, select, textarea {
 button{
   cursor: pointer;
   user-select: none;
+}
+
+.archived{
+  color: #666;
 }
