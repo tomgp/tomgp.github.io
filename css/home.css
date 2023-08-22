@@ -36,6 +36,7 @@
 }
 
 body{
+  margin:0;
   overscroll-behavior: none;
   -webkit-overflow-scrolling: auto;
   text-rendering: optimizeLegibility;
@@ -73,13 +74,14 @@ h2, h3 {
 
 
 article, header, footer {
+  width: 100dvw;
+  box-sizing: border-box;
   max-width: 640px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-  width: 100%;
 }
 
 a{
